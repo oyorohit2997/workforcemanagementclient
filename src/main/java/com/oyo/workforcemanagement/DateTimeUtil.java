@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.Date;
 
 public class DateTimeUtil {
 
@@ -20,7 +21,8 @@ public class DateTimeUtil {
     }
 
     public static long getCurrentEpoch(){
-        return ZonedDateTime.now(ZoneId.of("UTC")).toLocalDate().toEpochDay()*24*3600;
+        Date date = new Date();
+        return date.toInstant().toEpochMilli()/1000;
     }
 
 }

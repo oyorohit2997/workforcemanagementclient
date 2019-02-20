@@ -10,7 +10,6 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/TRescheduleEventRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TWorkForceConfigService.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/TScheduleEventRequest.java
-/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TUserProfileIdsWithWorkLoads.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TDataBaseError.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidBusinessIdException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/TDeleteEventResponse.java
@@ -20,6 +19,7 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TGetEmployeesRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TWorkLoad.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeOnBoardingService.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidTimeRangeException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidEpochTimeException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/TDeleteEventRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TToggleOffRequest.java
@@ -35,12 +35,14 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/Status.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/calendar/calendarConstants.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TActDeactRequestData.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployee.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TConfigDeactivated.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TWorkLoadAddRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TType.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidVersionException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeOffboardRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInternalErrorException.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TTimeRange.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TRosterService.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/src/main/java/com/oyo/workforcemanagement/WorkForceManagementClient.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TMongoDocDoesntExistException.java
@@ -57,5 +59,6 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeAlreadyOnboardedException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TRoasterMarkAvailableRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeBusinessUpdateRequest.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TGetAgentRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TGetEmployeesResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeResponse.java

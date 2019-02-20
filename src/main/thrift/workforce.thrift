@@ -10,10 +10,7 @@ typedef i32 Weight
 typedef bool Success
 typedef string ErrorMessage
 //------------------------------------------------------------------------------------------------------------------------------------
-
-/* Date format YYYY-MM-DD*/
-typedef i64 TDate
-
+typedef i64 TTime //epoch seconds
 
 // exceptions
 
@@ -91,6 +88,10 @@ exception TInternalErrorException {
    1: i32 errorCode;
    2: string message;
 }
+exception TInvalidTimeRangeException{
+   1: i32 errorCode;
+   2: string message
+}
 
 
 
@@ -122,12 +123,20 @@ struct TWorkforceConfig{
     2:required EntitiyID entityId;
     3:required TType entityType;
     4:required Weight weight;
+    5:required string businessId;
 }
 
 struct TActDeactRequestData {
     1:required i64 userProfileId;
     2:required EntitiyID entityId;
     3:required TType entityType;
+    4:required string businessId;
+}
+
+struct TGetAgentRequest{
+    1:EntitiyID entityId;
+    2:TType entityType;
+    3:string bussinessId;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------
@@ -149,7 +158,7 @@ struct TEmployeeBusinessUpdateRequest {
 }
 
 struct TGetEmployeesRequest {
-	1: required i64 beforeTime;
+	1: required TTime beforeTime;
 	2: required string businessId;
 	3: optional i32 limit;
 }
@@ -187,32 +196,35 @@ struct TToggleGetRequest {
 }
 struct TWorkLoadAddRequest {//date is epoch second;
 	1: required i64 userProfileId;
-	2: required TDate date;
-	3: required i64 lastAssignedDate;
+	2: required TTime epochTime;
+	3: required TTime lastAssignedTime;
 	4: required i32 load;
 	5: required string businessId;
 	6: required i64 version;
 }
+struct TTimeRange{ // both ends included
+    1: required TTime startTime;
+    2: required TTime endTime;
+}
 struct TWorkLoadGetRequest {
 	1: required i64 userProfileId;
-	2: required TDate date;
+    2: required TTimeRange tTimeRange;
 	3: required string businessId;
 }
 
 
 
 // responses
-struct TUserProfileIdsWithWorkLoads {
+struct TEmployee {
     1: required i64 userProfileId;
-    2: required i32 workload;
 }
 
 struct TGetEmployeesResponse {
     1: required TResponseStatus status;
-	2: required i64 beforeTime;
+	2: required TTime beforeTime;
 	3: required string businessId;
 	4: optional i32 limit;
-	5: optional list<TUserProfileIdsWithWorkLoads> userProfileIdsWithWorkLoads;
+	5: optional list<TEmployee> tEmployeeList;
 }
 struct TEmployeeResponse {
     1: required TResponseStatus status;
@@ -241,11 +253,11 @@ struct TToggleGetResponse {
 
 struct TWorkLoad {
     1: required i32 load;
-    2: required i64 version;
 }
 struct TWorkLoadResponse {
     1: required TResponseStatus status;
     2: optional TWorkLoad tWorkLoad;
+    3: optional i64 version;
 }
 
 
@@ -257,18 +269,18 @@ struct TWorkLoadResponse {
 
 service TWorkForceConfigService {
     //get all the active agents mapped to an entity
-   list<TWorkforceConfig> getAgents(1:EntitiyID entityId,2:TType entityType)
-   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError);
+   list<TWorkforceConfig> getAgents(TGetAgentRequest tGetAgentRequest)
+   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TInvalidBusinessIdException tInvalidBusinessIdException);
 
    //CRUD Kinda operations
    Success createConfig(1:TWorkforceConfig tWorkForceConfig)
-   throws (1:TInvalidRequest tInvalidRequest,2:TDataAlreadyExist tDataAlreadyExist,3:TDataBaseError tDataBaseError,4: TEmployeeNotOnboardedException tEmployeeNotOnboardedException);
+   throws (1:TInvalidRequest tInvalidRequest,2:TDataAlreadyExist tDataAlreadyExist,3:TDataBaseError tDataBaseError,4: TEmployeeNotOnboardedException tEmployeeNotOnboardedException,5:TInvalidBusinessIdException tInvalidBusinessIdException );
 
    Success updateConfig(1:TWorkforceConfig tWorkForceConfig)
-   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TConfigNotFound tConfigNotFoundError,4:TConfigDeactivated tConfigDeactivatedError,5:TEmployeeNotOnboardedException tEmployeeNotOnboardedException);
+   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TConfigNotFound tConfigNotFoundError,4:TConfigDeactivated tConfigDeactivatedError,5:TEmployeeNotOnboardedException tEmployeeNotOnboardedException,6:TInvalidBusinessIdException tInvalidBusinessIdException);
 
    Success deactivateConfig(1:TActDeactRequestData tActDeactRequestData)
-   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TConfigNotFound tConfigNotFoundError,4:TEmployeeNotOnboardedException tEmployeeNotOnboardedException);
+   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TConfigNotFound tConfigNotFoundError,4:TEmployeeNotOnboardedException tEmployeeNotOnboardedException,5:TInvalidBusinessIdException tInvalidBusinessIdException);
 
 //   Success activateConfig(1:TActDeactRequestData tActDeactRequestData)
 //   throws (1:TInvalidRequest tInvalidRequest,2:TDataBaseError tDataBaseError,3:TConfigNotFound tConfigNotFoundError);
@@ -318,8 +330,8 @@ service TToggleService {
 
 service TWorkLoadService {
     // Increases/decreases the load value of a user at given time
-    TResponseStatus addLoad(1:TWorkLoadAddRequest tWorkLoadAddRequest) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TEmployeeNotOnboardedException tEmployeeNotOnboardedException, 3:TInvalidDateException tInvalidDateException, 4:TInvalidWorkLoadValueException tInvalidWorkLoadValueException, 5:TInvalidVersionException tInvalidVersionException, 6:TInvalidBusinessIdException tInvalidBusinessIdException);
+    TResponseStatus addLoad(1:TWorkLoadAddRequest tWorkLoadAddRequest) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TEmployeeNotOnboardedException tEmployeeNotOnboardedException, 3:TInvalidEpochTimeException tInvalidEpochTimeException, 4:TInvalidWorkLoadValueException tInvalidWorkLoadValueException, 5:TInvalidBusinessIdException tInvalidBusinessIdException,6: TInvalidDateException  tInvalidDateException,7:TInvalidVersionException tInvalidVersionException);
     // Gets the load value of a user for the given time range
-    TWorkLoadResponse getLoad(1:TWorkLoadGetRequest tWorkLoadGetRequest) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TEmployeeNotOnboardedException tEmployeeNotOnboardedException, 3:TInvalidDateException tInvalidDateException, 4:TInvalidBusinessIdException tInvalidBusinessIdException);
+    TWorkLoadResponse getLoad(1:TWorkLoadGetRequest tWorkLoadGetRequest) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TEmployeeNotOnboardedException tEmployeeNotOnboardedException, 3:TInvalidTimeRangeException tInvalidTimeRangeException, 4:TInvalidBusinessIdException tInvalidBusinessIdException, 5: TInvalidDateException tInvalidDateException);
 }
 

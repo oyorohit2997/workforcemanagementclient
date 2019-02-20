@@ -45,6 +45,7 @@ com/oyo/workforce/TRosterService$1.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_result$offboardEmployee_resultStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args$offboardEmployee_argsTupleScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_result$offboardEmployee_resultTupleScheme.class
+com/oyo/workforce/TTimeRange$TTimeRangeTupleScheme.class
 com/oyo/workforce/TToggleService$Client$Factory.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args$isEmployeeOnboarded_argsStandardSchemeFactory.class
 com/oyo/workforce/TRoasterAvailabilityRequest.class
@@ -59,6 +60,7 @@ com/oyo/workforce/TEmployeeResponse$1.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_result$createConfig_resultTupleSchemeFactory.class
 com/oyo/workforce/TWorkLoadGetRequest$_Fields.class
 com/oyo/workforce/TInvalidUserProfileIdException$TInvalidUserProfileIdExceptionStandardSchemeFactory.class
+com/oyo/workforce/TGetAgentRequest$TGetAgentRequestStandardScheme.class
 com/oyo/calendar/TCalendarService$deleteEvent_args$deleteEvent_argsTupleSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOn_args$toggleOn_argsTupleScheme.class
 com/oyo/workforce/TInvalidEpochTimeException$TInvalidEpochTimeExceptionTupleSchemeFactory.class
@@ -78,12 +80,14 @@ com/oyo/workforce/TWorkForceService$AsyncProcessor$getEmployees$1.class
 com/oyo/workforce/TToggleOnRequest$TToggleOnRequestStandardScheme.class
 com/oyo/workforce/TRosterService$isAvailable_args$isAvailable_argsStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$AsyncClient$isToggleOn_call.class
+com/oyo/workforce/TGetAgentRequest.class
 com/oyo/workforce/TToggleGetRequest$TToggleGetRequestTupleScheme.class
 com/oyo/calendar/TCalendarService$checkAvailability_result.class
 com/oyo/workforce/TDataBaseError$_Fields.class
 com/oyo/calendar/TCalendarService$scheduleEvent_args$scheduleEvent_argsTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeBusinessUpdateRequest$TEmployeeBusinessUpdateRequestStandardScheme.class
 com/oyo/workforce/TRosterService$AsyncProcessor$markUnavailable$1.class
+com/oyo/workforce/TInvalidTimeRangeException$_Fields.class
 com/oyo/workforce/TRoasterAvailabilityResponse$_Fields.class
 com/oyo/workforce/TConfigNotFound$TConfigNotFoundTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceService$AsyncClient$isEmployeeAvailableInRange_call.class
@@ -144,7 +148,6 @@ com/oyo/workforce/TRoasterAvailabilityRequest$1.class
 com/oyo/workforce/TWorkLoadAddRequest$TWorkLoadAddRequestStandardScheme.class
 com/oyo/workforce/TToggleService$Processor.class
 com/oyo/workforce/TWorkLoad$_Fields.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$TUserProfileIdsWithWorkLoadsStandardScheme.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args$isEmployeeAvailableInRange_argsStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableNow_result.class
 com/oyo/calendar/TRescheduleEventRequest$TRescheduleEventRequestStandardSchemeFactory.class
@@ -206,6 +209,7 @@ com/oyo/workforce/TToggleOffRequest.class
 com/oyo/workforce/TToggleService$toggleOn_result$toggleOn_resultTupleScheme.class
 com/oyo/calendar/TRescheduleEventRequest$TRescheduleEventRequestTupleScheme.class
 com/oyo/workforce/TRoasterMarkAvailableRequest$TRoasterMarkAvailableRequestTupleSchemeFactory.class
+com/oyo/workforce/TGetAgentRequest$_Fields.class
 com/oyo/workforce/TToggleService$Processor$toggleOff.class
 com/oyo/workforce/TRosterService$AsyncProcessor$isAvailable$1.class
 com/oyo/workforce/TWorkforceConfig$_Fields.class
@@ -218,6 +222,7 @@ com/oyo/workforce/TInvalidVersionException$TInvalidVersionExceptionTupleSchemeFa
 com/oyo/calendar/TCalendarService$scheduleEvent_result$scheduleEvent_resultStandardScheme.class
 com/oyo/workforce/TWorkForceService$AsyncProcessor$isEmployeeAvailableInRange.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args$isEmployeeOnboarded_argsTupleScheme.class
+com/oyo/workforce/TEmployee$TEmployeeStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$AsyncProcessor$updateConfig$1.class
 com/oyo/calendar/TCalendarService$checkAvailability_args$_Fields.class
 com/oyo/workforce/TInternalErrorException.class
@@ -231,6 +236,7 @@ com/oyo/workforce/TDataBaseError.class
 com/oyo/workforce/TToggleService$isToggleOn_args.class
 com/oyo/calendar/TScheduleEventRequest$TScheduleEventRequestStandardSchemeFactory.class
 com/oyo/workforce/TRoasterMarkUnAvailableRequest$TRoasterMarkUnAvailableRequestStandardScheme.class
+com/oyo/workforce/TEmployee$TEmployeeStandardScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args$_Fields.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_result$createConfig_resultStandardScheme.class
 com/oyo/workforce/TWorkLoadService$getLoad_args$getLoad_argsTupleScheme.class
@@ -302,7 +308,6 @@ com/oyo/workforce/TEmployeeOnBoardingService$AsyncClient$Factory.class
 com/oyo/workforce/TToggleGetRequest$TToggleGetRequestTupleSchemeFactory.class
 com/oyo/workforce/TInvalidEpochTimeException$TInvalidEpochTimeExceptionStandardScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$TUserProfileIdsWithWorkLoadsTupleSchemeFactory.class
 com/oyo/workforce/TInvalidBusinessIdException$1.class
 com/oyo/calendar/TRescheduleEventRequest$1.class
 com/oyo/workforce/TRosterService$isAvailable_args$isAvailable_argsTupleSchemeFactory.class
@@ -322,9 +327,7 @@ com/oyo/workforce/TWorkLoadAddRequest$_Fields.class
 com/oyo/calendar/TCalendarService$checkAvailability_args$checkAvailability_argsStandardScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args$offboardEmployee_argsStandardScheme.class
 com/oyo/workforce/TEmployeeGetBusinessIdResponse$TEmployeeGetBusinessIdResponseTupleScheme.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads.class
 com/oyo/calendar/TCalendarService$Iface.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$TUserProfileIdsWithWorkLoadsTupleScheme.class
 com/oyo/calendar/TCalendarService$deleteEvent_args$_Fields.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableNow_result$isEmployeeAvailableNow_resultStandardScheme.class
 com/oyo/workforce/TMongoDocDoesntExistException$TMongoDocDoesntExistExceptionStandardSchemeFactory.class
@@ -353,6 +356,7 @@ com/oyo/workforce/TWorkForceService$Client$Factory.class
 com/oyo/calendar/TCalendarService$checkAvailability_args$checkAvailability_argsTupleScheme.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result$_Fields.class
 com/oyo/workforce/TToggleGetRequest$1.class
+com/oyo/workforce/TInvalidTimeRangeException.class
 com/oyo/workforce/TGetEmployeesRequest$TGetEmployeesRequestTupleScheme.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_args$createConfig_argsTupleSchemeFactory.class
 com/oyo/workforce/TRosterService$markAvailable_args$markAvailable_argsTupleScheme.class
@@ -367,6 +371,7 @@ com/oyo/workforce/TToggleService$toggleOff_args$toggleOff_argsStandardScheme.cla
 com/oyo/calendar/TCalendarService$rescheduleEvent_args$rescheduleEvent_argsTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_args$_Fields.class
 com/oyo/workforce/TDataAlreadyExist$TDataAlreadyExistTupleSchemeFactory.class
+com/oyo/workforce/TInvalidTimeRangeException$TInvalidTimeRangeExceptionTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$AsyncProcessor$checkAvailability$1.class
 com/oyo/workforce/TEmployeeDoesntExistException$TEmployeeDoesntExistExceptionTupleScheme.class
 com/oyo/workforce/TToggleGetRequest$_Fields.class
@@ -395,8 +400,10 @@ com/oyo/workforce/TWorkLoadService$getLoad_result$getLoad_resultTupleScheme.clas
 com/oyo/calendar/TCalendarService$AsyncClient$Factory.class
 com/oyo/workforce/TMongoDocDoesntExistException$TMongoDocDoesntExistExceptionTupleSchemeFactory.class
 com/oyo/workforce/TInvalidUserProfileIdException$_Fields.class
+com/oyo/workforce/TEmployee$_Fields.class
 com/oyo/workforce/TRoasterAvailabilityRequest$TRoasterAvailabilityRequestTupleSchemeFactory.class
 com/oyo/workforce/TRosterService$isAvailable_result$_Fields.class
+com/oyo/workforce/TTimeRange.class
 com/oyo/workforce/TRosterService$markAvailable_args$markAvailable_argsStandardSchemeFactory.class
 com/oyo/calendar/TScheduleEventRequest.class
 com/oyo/workforce/TEmployeeAlreadyOnboardedException$TEmployeeAlreadyOnboardedExceptionStandardSchemeFactory.class
@@ -406,6 +413,7 @@ com/oyo/workforce/TEmployeeOnBoardingService$getEmployeesBusinessId_args$_Fields
 com/oyo/calendar/calendarConstants.class
 com/oyo/workforce/TInvalidDateException$TInvalidDateExceptionStandardScheme.class
 com/oyo/calendar/TDeleteEventResponse$TDeleteEventResponseStandardScheme.class
+com/oyo/workforce/TGetAgentRequest$1.class
 com/oyo/workforce/TConfigDeactivated$_Fields.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_result.class
 com/oyo/workforce/TEmployeeOnboardRequest$1.class
@@ -432,6 +440,7 @@ com/oyo/workforce/TToggleService$toggleOff_result$toggleOff_resultTupleSchemeFac
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args$isEmployeeAvailableInRange_argsTupleScheme.class
 com/oyo/workforce/TToggleService$AsyncProcessor$toggleOff.class
 com/oyo/workforce/TInvalidUserProfileIdException$TInvalidUserProfileIdExceptionTupleScheme.class
+com/oyo/workforce/TTimeRange$TTimeRangeTupleSchemeFactory.class
 com/oyo/workforce/TMongoDocDoesntExistException$1.class
 com/oyo/workforce/TToggleGetRequest.class
 com/oyo/workforce/TWorkForceConfigService$updateConfig_args$_Fields.class
@@ -441,6 +450,7 @@ com/oyo/workforce/TRosterService$markUnavailable_args.class
 com/oyo/calendar/TRescheduleEventResponse.class
 com/oyo/workforce/TEmployeeOnBoardingService$onboardEmployee_result$onboardEmployee_resultTupleScheme.class
 com/oyo/workforce/TWorkLoadService$addLoad_args$addLoad_argsStandardScheme.class
+com/oyo/workforce/TInvalidTimeRangeException$TInvalidTimeRangeExceptionStandardScheme.class
 com/oyo/workforce/TWorkLoadAddRequest$TWorkLoadAddRequestTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$AsyncIface.class
 com/oyo/workforce/TWorkForceConfigService$AsyncProcessor$updateConfig.class
@@ -497,7 +507,9 @@ com/oyo/workforce/TInvalidVersionException$TInvalidVersionExceptionStandardSchem
 com/oyo/calendar/TCalendarService$deleteEvent_result$deleteEvent_resultTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$checkAvailability_args$checkAvailability_argsStandardSchemeFactory.class
 com/oyo/workforce/TRosterService$Processor$markUnavailable.class
+com/oyo/workforce/TEmployee$TEmployeeTupleScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$AsyncProcessor.class
+com/oyo/workforce/TInvalidTimeRangeException$TInvalidTimeRangeExceptionTupleScheme.class
 com/oyo/workforce/TWorkLoadService$AsyncClient.class
 com/oyo/workforce/TToggleService$toggleOff_args$toggleOff_argsTupleScheme.class
 com/oyo/workforce/TRosterService$Client.class
@@ -532,8 +544,8 @@ com/oyo/workforce/TWorkLoadService$1.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result$getAgents_resultStandardScheme.class
 com/oyo/workforce/TWorkForceConfigService$updateConfig_args$updateConfig_argsTupleScheme.class
 com/oyo/workforce/TToggleService$isToggleOn_result$isToggleOn_resultStandardScheme.class
+com/oyo/workforce/TInvalidTimeRangeException$TInvalidTimeRangeExceptionStandardSchemeFactory.class
 com/oyo/workforce/TWorkforceConfig.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$_Fields.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args.class
 com/oyo/workforce/TInvalidToggleOffReasonException.class
 com/oyo/workforce/TEmployeeNotOnboardedException.class
@@ -541,13 +553,15 @@ com/oyo/workforce/TRosterService$AsyncProcessor$markAvailable$1.class
 com/oyo/workforce/TInvalidBusinessIdException$TInvalidBusinessIdExceptionStandardScheme.class
 com/oyo/calendar/TDeleteEventResponse$TDeleteEventResponseTupleScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_result$_Fields.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$TUserProfileIdsWithWorkLoadsStandardSchemeFactory.class
+com/oyo/workforce/TEmployee$TEmployeeTupleSchemeFactory.class
 com/oyo/workforce/TDataBaseError$1.class
 com/oyo/workforce/TWorkLoadService$getLoad_args$_Fields.class
 com/oyo/workforce/TInvalidWorkLoadValueException$_Fields.class
+com/oyo/workforce/TEmployee.class
 com/oyo/workforce/TWorkForceConfigService$AsyncClient.class
 com/oyo/workforce/TRosterService.class
 com/oyo/workforce/TWorkLoadService$AsyncClient$Factory.class
+com/oyo/workforce/TGetAgentRequest$TGetAgentRequestStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOn_result$toggleOn_resultTupleSchemeFactory.class
 com/oyo/calendar/TScheduleEventRequest$TScheduleEventRequestStandardScheme.class
 com/oyo/calendar/TCalendarService$scheduleEvent_args.class
@@ -593,6 +607,7 @@ com/oyo/workforce/TWorkLoad$1.class
 com/oyo/workforce/TToggleGetRequest$TToggleGetRequestStandardSchemeFactory.class
 com/oyo/workforce/TInvalidRequest$TInvalidRequestTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$updateConfig_result$updateConfig_resultStandardSchemeFactory.class
+com/oyo/workforce/TTimeRange$_Fields.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_args$getAgents_argsStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$deactivateConfig_result$deactivateConfig_resultTupleSchemeFactory.class
 com/oyo/workforce/TToggleOnRequest$1.class
@@ -630,6 +645,8 @@ com/oyo/workforce/TRoasterMarkUnAvailableRequest$1.class
 com/oyo/workforce/TToggleStatus.class
 com/oyo/calendar/TCheckAvailabilityResponse$TCheckAvailabilityResponseStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$deactivateConfig_args$deactivateConfig_argsStandardSchemeFactory.class
+com/oyo/workforce/TGetAgentRequest$TGetAgentRequestTupleScheme.class
+com/oyo/workforce/TTimeRange$1.class
 com/oyo/calendar/TCalendarService.class
 com/oyo/workforce/TDataAlreadyExist$TDataAlreadyExistStandardSchemeFactory.class
 com/oyo/workforce/TRosterService$markUnavailable_args$markUnavailable_argsStandardScheme.class
@@ -644,6 +661,7 @@ com/oyo/workforce/TWorkForceConfigService$Processor$getAgents.class
 com/oyo/workforce/TEmployeeDoesntExistException$TEmployeeDoesntExistExceptionTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_args$rescheduleEvent_argsStandardScheme.class
 com/oyo/workforce/TInvalidEpochTimeException.class
+com/oyo/workforce/TInvalidTimeRangeException$1.class
 com/oyo/workforce/TWorkForceConfigService$Client.class
 com/oyo/workforce/TEmployeeResponse$TEmployeeResponseStandardScheme.class
 com/oyo/workforce/TInternalErrorException$TInternalErrorExceptionStandardSchemeFactory.class
@@ -654,13 +672,13 @@ com/oyo/workforce/TWorkLoadService$getLoad_result.class
 com/oyo/workforce/TInvalidToggleOffReasonException$TInvalidToggleOffReasonExceptionStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args$isEmployeeOnboarded_argsTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService.class
+com/oyo/workforce/TTimeRange$TTimeRangeStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args$isEmployeeAvailableInRange_argsTupleSchemeFactory.class
 com/oyo/workforce/TInvalidRequest$TInvalidRequestStandardScheme.class
 com/oyo/workforce/TRosterService$Processor$isAvailable.class
 com/oyo/workforce/TInternalErrorException$1.class
 com/oyo/workforce/TWorkLoadService$AsyncIface.class
 com/oyo/workforce/TDataBaseError$TDataBaseErrorTupleScheme.class
-com/oyo/workforce/TUserProfileIdsWithWorkLoads$1.class
 com/oyo/workforce/TEmployeeAlreadyOnboardedException$TEmployeeAlreadyOnboardedExceptionTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$updateConfig_result$_Fields.class
 com/oyo/workforce/TRoasterAvailabilityRequest$TRoasterAvailabilityRequestStandardScheme.class
@@ -684,6 +702,8 @@ com/oyo/calendar/Status.class
 com/oyo/workforce/TEmployeeNotOnboardedException$TEmployeeNotOnboardedExceptionTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$AsyncProcessor$deleteEvent.class
 com/oyo/workforce/TEmployeeGetBusinessIdResponse.class
+com/oyo/workforce/TGetAgentRequest$TGetAgentRequestTupleSchemeFactory.class
+com/oyo/workforce/TTimeRange$TTimeRangeStandardScheme.class
 com/oyo/workforce/TWorkLoadService$addLoad_result$addLoad_resultStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$Processor$isEmployeeAvailableNow.class
 com/oyo/calendar/TCalendarService$deleteEvent_result$_Fields.class
@@ -772,6 +792,7 @@ com/oyo/workforce/TRoasterAvailabilityResponse$TRoasterAvailabilityResponseStand
 com/oyo/workforce/TEmployeeOnBoardingService$Processor$onboardEmployee.class
 com/oyo/workforce/TWorkForceConfigService$updateConfig_result.class
 com/oyo/workforce/TWorkLoadService$AsyncProcessor$addLoad$1.class
+com/oyo/workforce/TEmployee$1.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result$getAgents_resultTupleScheme.class
 com/oyo/workforce/TWorkForceConfigService$AsyncClient$createConfig_call.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_args$_Fields.class

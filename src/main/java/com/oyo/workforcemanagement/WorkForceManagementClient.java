@@ -26,12 +26,12 @@ public class WorkForceManagementClient {
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Services uri(one active at a time)
 
-    //private static String uri = "employee_onboarding";
+   // private static String uri = "employee_onboarding";
     private static String uri = "workload_service";
     //private static String uri = "workforce_service";
     //private static String uri = "toggle_service";
     // private static String uri = "roster_service";
-    //private static String uri = "workforce_config";
+   // private static String uri = "workforce_config";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
@@ -49,31 +49,32 @@ public class WorkForceManagementClient {
 
 //            TEmployeeOnBoardingService.Client client = new TEmployeeOnBoardingService.Client(protocol);
 //            System.out.println(client);
-            //System.out.println(client.onboardEmployee(new TEmployeeOnboardRequest(20001046,"PACKAGES")));
+//            System.out.println(client.onboardEmployee(new TEmployeeOnboardRequest(456,"WEDDINGZ")));
             //System.out.println(client.isEmployeeOnboarded(20001046));
             //System.out.println(client.getEmployeesBusinessId(20001046));
             //System.out.println(client.offboardEmployee(new TEmployeeOffboardRequest(20001046,"PACKAGES")));
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Workload Service(working fine)
 
-//            TWorkLoadService.Client client = new TWorkLoadService.Client(protocol);
-//            long epochTime= DateTimeUtil.getCurrentEpoch();
-//            int load =5;
-//            System.out.println(client.addLoad(new TWorkLoadAddRequest(20001046,epochTime,epochTime,load,"PACKAGES",0)));
-//            System.out.println(client.getLoad(new TWorkLoadGetRequest(20001046,epochTime,"PACKAGES")));
+            TWorkLoadService.Client client = new TWorkLoadService.Client(protocol);
+            long epochTime= DateTimeUtil.getCurrentEpoch();
+            System.out.println(epochTime);
+            int load =5;
+            //System.out.println(client.addLoad(new TWorkLoadAddRequest(123,epochTime,epochTime,load,"WEDDINGZ",1)));
+            System.out.println(client.getLoad(new TWorkLoadGetRequest(123,new TTimeRange(1550559877,epochTime),"WEDDINGZ")));
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //WorkForce Service(check for isEmployeeAvailable once again,dependency on calendar service)
 
-            //TWorkForceService.Client client = new TWorkForceService.Client(protocol);
-            //TGetEmployeesRequest tGetEmployeesRequest = new TGetEmployeesRequest();
-            //long startTime = System.currentTimeMillis()/1000 + (80*3600);
-            //long endTime = startTime + 3600;
-            //Long beforeTime = 1550188801L;
-            //tGetEmployeesRequest.setBeforeTime(beforeTime);
-            //tGetEmployeesRequest.setLimit(10);
-            //tGetEmployeesRequest.setBusinessId("PACKAGES");
-            //System.out.println(client.getEmployees(tGetEmployeesRequest));
+//            TWorkForceService.Client client = new TWorkForceService.Client(protocol);
+//            TGetEmployeesRequest tGetEmployeesRequest = new TGetEmployeesRequest();
+//            //long startTime = System.currentTimeMillis()/1000 + (80*3600);
+//            //long endTime = startTime + 3600;
+//            Long beforeTime = 1550226343L;
+//            tGetEmployeesRequest.setBeforeTime(beforeTime);
+//            tGetEmployeesRequest.setLimit(10);
+//            tGetEmployeesRequest.setBusinessId("PACKAGES");
+//            System.out.println(client.getEmployees(tGetEmployeesRequest));
             //System.out.println(client.isEmployeeAvailableInRange(20001046,startTime,endTime));
             //System.out.println(client.isEmployeeAvailableNow(20001046));
 
@@ -100,16 +101,23 @@ public class WorkForceManagementClient {
 //            TWorkforceConfig tWorkforceConfig = new TWorkforceConfig();
 //            tWorkforceConfig.setUserProfileId(123);
 //            tWorkforceConfig.setEntityId("123");
-//            tWorkforceConfig.setWeight(20);
+//            tWorkforceConfig.setWeight(60);
 //            tWorkforceConfig.setEntityType(TType.findByValue(1));
-//            System.out.println(client.createConfig(tWorkforceConfig));
-//            System.out.println(client.getAgents("123",TType.findByValue(1)));
-//            System.out.println(client.updateConfig(tWorkforceConfig));
+//            tWorkforceConfig.setBusinessId("PACKAGES");
+           // System.out.println(client.createConfig(tWorkforceConfig));
+              //System.out.println(client.updateConfig(tWorkforceConfig));
+//              TGetAgentRequest tGetAgentRequest = new TGetAgentRequest();
+//              tGetAgentRequest.setEntityId("123");
+//              tGetAgentRequest.setEntityType(TType.findByValue(1));
+//              tGetAgentRequest.setBussinessId("PACKAGES");
+//              System.out.println(client.getAgents(tGetAgentRequest));
+
 
 //            TActDeactRequestData tActDeactRequestData = new TActDeactRequestData();
-//            tActDeactRequestData.setUserProfileId(20001046);
+//            tActDeactRequestData.setUserProfileId(123);
 //            tActDeactRequestData.setEntityId("123");
 //            tActDeactRequestData.setEntityType(TType.findByValue(1));
+//            tActDeactRequestData.setBusinessId("PACKAGES");
 //            System.out.println(client.deactivateConfig(tActDeactRequestData));
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
