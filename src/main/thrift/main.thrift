@@ -1,2 +1,5 @@
 include "workforce.thrift"
 include "calendar.thrift"
+include "accountManagement.thrift"
+include "metadata.thrift"
+include "MMdatathrift.thrift"
