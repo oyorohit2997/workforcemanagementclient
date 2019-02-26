@@ -21,23 +21,25 @@ public class WorkForceManagementClient {
     private static String host = "localhost";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //actual host
-    //private static String host = "acppr-0.acp-workforce-management.incubate.oyorooms.ms";
+//    private static String host = "10.50.21.106";
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Services uri(one active at a time)
 
-   // private static String uri = "employee_onboarding";
-    private static String uri = "workload_service";
+    //private static String uri = "employee_onboarding";
+    //private static String uri = "workload_service";
     //private static String uri = "workforce_service";
     //private static String uri = "toggle_service";
     // private static String uri = "roster_service";
    // private static String uri = "workforce_config";
+    private static String uri = "callcentre_hierarchy";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
         try{
             //create HTTP client
-            //String url = "http://"+host+"/"+uri+"/"; //(for actual host)
+//            String url = "http://"+host+"/"+uri+"/"; //(for actual host)
+//            System.out.println(url);
             String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
             System.out.println(url);
             THttpClient httpClient  = new THttpClient(url);
@@ -47,21 +49,21 @@ public class WorkForceManagementClient {
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
             //employee onboarding(working fine, dependency on crs)
 
-//            TEmployeeOnBoardingService.Client client = new TEmployeeOnBoardingService.Client(protocol);
+           //TEmployeeOnBoardingService.Client client = new TEmployeeOnBoardingService.Client(protocol);
 //            System.out.println(client);
-//            System.out.println(client.onboardEmployee(new TEmployeeOnboardRequest(456,"WEDDINGZ")));
+//            System.out.println(client.onboardEmployee(new TEmployeeOnboardRequest(456,"PACKAGES")));
             //System.out.println(client.isEmployeeOnboarded(20001046));
             //System.out.println(client.getEmployeesBusinessId(20001046));
             //System.out.println(client.offboardEmployee(new TEmployeeOffboardRequest(20001046,"PACKAGES")));
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Workload Service(working fine)
 
-            TWorkLoadService.Client client = new TWorkLoadService.Client(protocol);
-            long epochTime= DateTimeUtil.getCurrentEpoch();
-            System.out.println(epochTime);
-            int load =5;
-            //System.out.println(client.addLoad(new TWorkLoadAddRequest(123,epochTime,epochTime,load,"WEDDINGZ",1)));
-            System.out.println(client.getLoad(new TWorkLoadGetRequest(123,new TTimeRange(1550559877,epochTime),"WEDDINGZ")));
+//            TWorkLoadService.Client client = new TWorkLoadService.Client(protocol);
+//            long epochTime= DateTimeUtil.getCurrentEpoch();
+//            System.out.println(epochTime);
+//            int load =5;
+//            //System.out.println(client.addLoad(new TWorkLoadAddRequest(26162777,epochTime,epochTime,load,"WEDDINGZ",5)));
+//            System.out.println(client.getLoad(new TWorkLoadGetRequest(23885906,new TTimeRange(1551037047,1551162701),"WEDDINGZ")));
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //WorkForce Service(check for isEmployeeAvailable once again,dependency on calendar service)
@@ -97,19 +99,19 @@ public class WorkForceManagementClient {
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //WorkForce Config
 
-//            TWorkForceConfigService.Client client = new TWorkForceConfigService.Client(protocol);
+           // TWorkForceConfigService.Client client = new TWorkForceConfigService.Client(protocol);
 //            TWorkforceConfig tWorkforceConfig = new TWorkforceConfig();
-//            tWorkforceConfig.setUserProfileId(123);
-//            tWorkforceConfig.setEntityId("123");
+//            tWorkforceConfig.setUserProfileId(23885906);
+//            tWorkforceConfig.setEntityId("1");
 //            tWorkforceConfig.setWeight(60);
-//            tWorkforceConfig.setEntityType(TType.findByValue(1));
-//            tWorkforceConfig.setBusinessId("PACKAGES");
-           // System.out.println(client.createConfig(tWorkforceConfig));
+//            tWorkforceConfig.setEntityType(TType.WEDDINGZ_NONVENUE);
+//            tWorkforceConfig.setBusinessId("WEDDINGZ");
+            //System.out.println(client.createConfig(tWorkforceConfig));
               //System.out.println(client.updateConfig(tWorkforceConfig));
 //              TGetAgentRequest tGetAgentRequest = new TGetAgentRequest();
-//              tGetAgentRequest.setEntityId("123");
-//              tGetAgentRequest.setEntityType(TType.findByValue(1));
-//              tGetAgentRequest.setBussinessId("PACKAGES");
+//              tGetAgentRequest.setEntityId("1");
+//              tGetAgentRequest.setEntityType(TType.WEDDINGZ_NONVENUE);
+//              tGetAgentRequest.setBussinessId("WEDDINGZ");
 //              System.out.println(client.getAgents(tGetAgentRequest));
 
 
@@ -120,6 +122,28 @@ public class WorkForceManagementClient {
 //            tActDeactRequestData.setBusinessId("PACKAGES");
 //            System.out.println(client.deactivateConfig(tActDeactRequestData));
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
+            //Call Centre
+
+            TCallCentreHierarchyService.Client client = new TCallCentreHierarchyService.Client(protocol);
+            TAddEmployeeCallCentreHierarchyInfo tAddEmployeeCallCentreHierarchyInfo = new TAddEmployeeCallCentreHierarchyInfo();
+            tAddEmployeeCallCentreHierarchyInfo.setUserProfileId(26218006);
+            tAddEmployeeCallCentreHierarchyInfo.setLevel1("Group-1");
+            tAddEmployeeCallCentreHierarchyInfo.setLevel2("DOM-Sales");
+            tAddEmployeeCallCentreHierarchyInfo.setLevel3("Gurgaon");
+            tAddEmployeeCallCentreHierarchyInfo.setLevel4("B2C Packages");
+            tAddEmployeeCallCentreHierarchyInfo.setActive(true);
+            tAddEmployeeCallCentreHierarchyInfo.setCreatedById(23885944);
+            tAddEmployeeCallCentreHierarchyInfo.setParentId(1);
+            client.addEmployeeCallCentreHierarchyInfo(tAddEmployeeCallCentreHierarchyInfo);
+//            TGetLevelInfoRequest tGetLevelInfoRequest = new TGetLevelInfoRequest();
+//            tGetLevelInfoRequest.setUserProfileId(26218008);
+//            //System.out.println(client.getLevelInfo(tGetLevelInfoRequest));
+//            TGetParentIdRequest tGetParentIdRequest = new TGetParentIdRequest();
+//            tGetParentIdRequest.setUserProfileId(26218008);
+//            //System.out.println(client.getParentId(tGetParentIdRequest));
+//            TGetSubordinateEmployeeDetailsRequest tGetSubordinateEmployeeDetailsRequest = new TGetSubordinateEmployeeDetailsRequest();
+//            tGetSubordinateEmployeeDetailsRequest.setParentId(1);
+//            //System.out.println(client.getSubordinateEmployeeDetails(tGetSubordinateEmployeeDetailsRequest));
 
 
             // close transport

@@ -11,7 +11,7 @@ typedef bool Success
 typedef string ErrorMessage
 //------------------------------------------------------------------------------------------------------------------------------------
 typedef i64 TTime //epoch seconds
-
+typedef string MetaId
 // exceptions
 
 //------------------------------------------------------------------------------------------------------------------------------------
@@ -93,7 +93,16 @@ exception TInvalidTimeRangeException{
    2: string message
 }
 
+//CallCentre
+exception TMetaIdDoesNotExists{
+   1: i32 errorCode;
+   2: string message;
+}
 
+exception TEmployeeAlreadyExists{
+   1: i32 errorCode;
+   2: string message;
+}
 
 // enums
 
@@ -211,9 +220,29 @@ struct TWorkLoadGetRequest {
     2: required TTimeRange tTimeRange;
 	3: required string businessId;
 }
+//CallCentreHierarchy
+struct TAddEmployeeCallCentreHierarchyInfo{
+    1: required i64 userProfileId;
+    2: required MetaId level1;
+    3: required MetaId level2;
+    4: required MetaId level3;
+    5: required MetaId level4;
+    6: required i64 createdById;
+    7: required bool active;
+    8: required i64 parentId;
+}
 
+struct TGetLevelInfoRequest{
+    1: required i64 userProfileId;
+}
 
+struct TGetParentIdRequest{
+    1: required i64 userProfileId;
+}
 
+struct TGetSubordinateEmployeeDetailsRequest{
+    1: required i64 parentId;
+}
 // responses
 struct TEmployee {
     1: required i64 userProfileId;
@@ -260,6 +289,21 @@ struct TWorkLoadResponse {
     3: optional i64 version;
 }
 
+//CallCentreHierarchy
+struct TGetLevelInfoResponse{
+     1: required string level1;
+     2: required string level2;
+     3: required string level3;
+     4: required string level4;
+}
+
+struct TGetParentIdResponse{
+    1: required i64 parentId;
+}
+
+struct TGetSubordinateEmployeeDetailsResponse{
+    1: required list<i64> subordinateEmployeeList;
+}
 
 //services
 
@@ -335,3 +379,11 @@ service TWorkLoadService {
     TWorkLoadResponse getLoad(1:TWorkLoadGetRequest tWorkLoadGetRequest) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TEmployeeNotOnboardedException tEmployeeNotOnboardedException, 3:TInvalidTimeRangeException tInvalidTimeRangeException, 4:TInvalidBusinessIdException tInvalidBusinessIdException, 5: TInvalidDateException tInvalidDateException);
 }
 
+
+//CallCentreHierarchy
+service TCallCentreHierarchyService{
+    TResponseStatus addEmployeeCallCentreHierarchyInfo(1:TAddEmployeeCallCentreHierarchyInfo tAddCallCentreHierarchyInfo) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TMetaIdDoesNotExists tMetaIdDoesNotExists, 3:TEmployeeAlreadyExists tEmployeeAlreadyExists);
+    TGetLevelInfoResponse getLevelInfo(TGetLevelInfoRequest tGetLevelInfoRequest) throws (1: TEmployeeDoesntExistException tEmployeeDoesntExistException);
+    TGetParentIdResponse getParentId(TGetParentIdRequest tGetParentIdRequest) throws (1: TEmployeeDoesntExistException tEmployeeDoesntExistException);
+    TGetSubordinateEmployeeDetailsResponse getSubordinateEmployeeDetails(TGetSubordinateEmployeeDetailsRequest tGetSubordinateEmployeeDetailsRequest);
+}
