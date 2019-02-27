@@ -3,6 +3,8 @@ package com.oyo.workforcemanagement;
 
 
 
+import com.oyo.metadata.TCallcenterHierarchyService;
+import com.oyo.metadata.TTeamGetRequest;
 import com.oyo.workforce.*;
 import org.apache.thrift.protocol.TJSONProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -17,8 +19,8 @@ public class WorkForceManagementClient {
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Local Host
-    private static int port = 9000;
-    private static String host = "localhost";
+//    private static int port = 9000;
+//    private static String host = "localhost";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //actual host
 //    private static String host = "10.50.21.106";
@@ -40,9 +42,9 @@ public class WorkForceManagementClient {
             //create HTTP client
 //            String url = "http://"+host+"/"+uri+"/"; //(for actual host)
 //            System.out.println(url);
-            String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
-            System.out.println(url);
-            THttpClient httpClient  = new THttpClient(url);
+//            String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
+//            System.out.println(url);
+            THttpClient httpClient  = new THttpClient("http://acppr-0.metadataservice.incubate.oyorooms.ms/metadata_service_cch/");
             httpClient.setConnectTimeout(3000);
             TProtocol protocol = new TJSONProtocol(httpClient);
 
@@ -123,18 +125,19 @@ public class WorkForceManagementClient {
 //            System.out.println(client.deactivateConfig(tActDeactRequestData));
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Call Centre
-
-            TCallCentreHierarchyService.Client client = new TCallCentreHierarchyService.Client(protocol);
-            TAddEmployeeCallCentreHierarchyInfo tAddEmployeeCallCentreHierarchyInfo = new TAddEmployeeCallCentreHierarchyInfo();
-            tAddEmployeeCallCentreHierarchyInfo.setUserProfileId(26218006);
-            tAddEmployeeCallCentreHierarchyInfo.setLevel1("Group-1");
-            tAddEmployeeCallCentreHierarchyInfo.setLevel2("DOM-Sales");
-            tAddEmployeeCallCentreHierarchyInfo.setLevel3("Gurgaon");
-            tAddEmployeeCallCentreHierarchyInfo.setLevel4("B2C Packages");
-            tAddEmployeeCallCentreHierarchyInfo.setActive(true);
-            tAddEmployeeCallCentreHierarchyInfo.setCreatedById(23885944);
-            tAddEmployeeCallCentreHierarchyInfo.setParentId(1);
-            client.addEmployeeCallCentreHierarchyInfo(tAddEmployeeCallCentreHierarchyInfo);
+            TCallcenterHierarchyService.Client client = new TCallcenterHierarchyService.Client(protocol);
+            System.out.println(client.getTeam(new TTeamGetRequest("cch-team-d776d8ce-69aa-49ba-9f2e-f3748063ab38","en")));
+//            TCallCentreHierarchyService.Client client = new TCallCentreHierarchyService.Client(protocol);
+//            TAddEmployeeCallCentreHierarchyInfo tAddEmployeeCallCentreHierarchyInfo = new TAddEmployeeCallCentreHierarchyInfo();
+//            tAddEmployeeCallCentreHierarchyInfo.setUserProfileId(2621800);
+//            tAddEmployeeCallCentreHierarchyInfo.setLevel1("cch-team-34b1e3b3-bf63-49a7-8bb1-ceee673f3604");
+//            tAddEmployeeCallCentreHierarchyInfo.setLevel2("cch-center-a33d2f75-c70e-47a4-8d31-983df879ef23");
+//            tAddEmployeeCallCentreHierarchyInfo.setLevel3("cch-lob-aa0808c2-923a-4976-b901-1a95b0c06079");
+//            tAddEmployeeCallCentreHierarchyInfo.setLevel4("cch-business-c89c57ef-54fc-4d88-8280-04ab364e0109");
+//            tAddEmployeeCallCentreHierarchyInfo.setActive(true);
+//            tAddEmployeeCallCentreHierarchyInfo.setCreatedById(23885944);
+//            tAddEmployeeCallCentreHierarchyInfo.setParentId(1);
+//            client.addEmployeeCallCentreHierarchyInfo(tAddEmployeeCallCentreHierarchyInfo);
 //            TGetLevelInfoRequest tGetLevelInfoRequest = new TGetLevelInfoRequest();
 //            tGetLevelInfoRequest.setUserProfileId(26218008);
 //            //System.out.println(client.getLevelInfo(tGetLevelInfoRequest));
