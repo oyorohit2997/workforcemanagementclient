@@ -40,8 +40,9 @@ public class WorkForceManagementClient {
             httpClient.setConnectTimeout(3000);
             TProtocol protocol = new TJSONProtocol(httpClient);
             TOrgDataService.Client client = new TOrgDataService.Client(protocol);
-            //System.out.println(client.getMicroMarket("24813255"));
-            System.out.println(client.getParent("227", TOrgType.MICROMARKET,TOrgType.HUB));
+            System.out.println(client.getMicroMarket("24813255").getId());
+
+           // System.out.println(client.getParent("MM_CHN_7", TOrgType.MICROMARKET,TOrgType.HUB));
             //            AccountManagement.Client client = new AccountManagement.Client(protocol);
 //            TAccountObject tAccountObject = client.getAccountFromCrsId("33830",TEntityType.TravelAgent);
 //            // close transport
