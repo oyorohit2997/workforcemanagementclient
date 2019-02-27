@@ -9,11 +9,13 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/agentType.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAddressObject.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidBusinessIdException.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/orgdata/TOrgType.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TCreateBillingAddressRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TRestrictionResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAccountHistoryException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TMiceDestinationCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAccountSearchResponse.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/orgdata/TMicroMarketDetails.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TToggleStatus.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCabCategoryDetails.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TAiportGetRequest.java
@@ -58,6 +60,7 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TAmenityResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TWorkLoadService.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/THotelCategoryCUDResponse.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/orgdata/TMicroMarket.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeAlreadyOnboardedException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCity.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TLocalityCUDResponse.java
@@ -100,14 +103,12 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCountry.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TRoasterMarkUnAvailableRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TToggleGetResponse.java
-/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/mmdata/TMicroMarket.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TRoomCategoryCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TFoodCategoryCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TVenuePolicyResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeOnboardRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TPackageTag.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCatalogSection.java
-/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/mmdata/TMicroMarketDetails.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAutoCompleteResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TPaxRangeCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TBillingAddressCreationException.java
@@ -125,6 +126,7 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TToggleOnRequest.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCountryCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TMealPlanUpdateRequest.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/orgdata/TOrgDataService.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TJsonParseException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TDropPoint.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TVenuePolicy.java
@@ -209,7 +211,6 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TRestriction.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TItemNotFoundException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TAmenityCUDResponse.java
-/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/mmdata/TMMDataService.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TPackageTagResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCancellationPolicyCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TBillingAddressResponse.java

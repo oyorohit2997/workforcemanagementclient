@@ -1,4 +1,4 @@
-namespace java com.oyo.platform.mmdata
+namespace java com.oyo.platform.orgdata
 
 
 struct TMicroMarket {
@@ -6,6 +6,13 @@ struct TMicroMarket {
   2: TMicroMarketDetails mmDetails
 }
 
+enum TOrgType {
+   MICROMARKET,
+   HUB,
+   ZONE,
+   COUNTRY,
+   CITY
+}
 
 struct TMicroMarketDetails {
   1: string city
@@ -20,28 +27,26 @@ struct TMicroMarketDetails {
   10: bool sapSync
 }
 
+service TOrgDataService{
 
-service TMMDataService{
+   TMicroMarket getMMOrgInfo(string mmId);
 
-   string createMM(1:TMicroMarketDetails microMarketDetails);
+   bool associateEmployeeToOrg(string userProfileId, string role, string id, TOrgType orgType);
 
-   string createMicroMarket(1:TMicroMarket microMarket);
-
-   TMicroMarket getMicroMarketInfo(1:string mmId);
-
-   bool associateEmployeeToMM(string userProfileId, string role, string mmId);
-
-   list<string> getUsers(string mmId, list<string> role);
+   list<string> getUsers(string id, list<string> role, TOrgType orgType);
 
    TMicroMarket getMicroMarket(string userProfileId);
 
-   string getMicroMarketId(string userProfileId);
+   string getOrgId(string userProfileId, TOrgType orgType);
 
-   bool removeEmployeeFromMM(string userProfileId, string role, string mmId);
+   bool removeEmployeeFromOrg(string userProfileId, string role, string id, TOrgType orgType);
 
-   list<TMicroMarket> findByName(string name);
+   list<TMicroMarket> findMMByName(string name);
 
-   list<TMicroMarket> findById(string mmId);
+   list<TMicroMarket> findMMById(string mmId);
+
+   string getParent(string id, TOrgType orgType, TOrgType parentOrgType);
 }
+
 
 

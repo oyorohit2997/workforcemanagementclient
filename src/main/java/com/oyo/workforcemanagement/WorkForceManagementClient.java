@@ -3,8 +3,8 @@ package com.oyo.workforcemanagement;
 
 
 
-import com.oyo.platform.mmdata.TMMDataService;
-import com.oyo.platform.mmdata.TMicroMarketDetails;
+import com.oyo.platform.orgdata.TOrgDataService;
+import com.oyo.platform.orgdata.TOrgType;
 import org.apache.thrift.protocol.TJSONProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.THttpClient;
@@ -36,15 +36,13 @@ public class WorkForceManagementClient {
             //String url = "http://"+host+"/"+uri+"/"; //(for actual host)
 //            String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
 //            System.out.println(url);
-            THttpClient httpClient  = new THttpClient("http://plcore-0.micromarket-data-service.incubate.oyorooms.ms/micromarket");
+            THttpClient httpClient  = new THttpClient("http://plcore-0.micromarket-data-service.incubate.oyorooms.ms/org");
             httpClient.setConnectTimeout(3000);
             TProtocol protocol = new TJSONProtocol(httpClient);
-            TMMDataService.Client client = new TMMDataService.Client(protocol);
-            //System.out.println(client.getMicroMarketInfo("5c73942c27e4900001023435a"));
-            client.associateEmployeeToMM("13122313","test","Test-1234");
-            //System.out.println(client.getMicroMarket("126343"));
-            //System.out.println(client.createMM(new TMicroMarketDetails("Patna","patna-mm","Test-1234",DateTimeUtil.getCurrentEpoch(),DateTimeUtil.getCurrentEpoch(),"123",null,"",true,true)));
-//            AccountManagement.Client client = new AccountManagement.Client(protocol);
+            TOrgDataService.Client client = new TOrgDataService.Client(protocol);
+            //System.out.println(client.getMicroMarket("24813255"));
+            System.out.println(client.getParent("227", TOrgType.MICROMARKET,TOrgType.HUB));
+            //            AccountManagement.Client client = new AccountManagement.Client(protocol);
 //            TAccountObject tAccountObject = client.getAccountFromCrsId("33830",TEntityType.TravelAgent);
 //            // close transport
             httpClient.close();
