@@ -4,22 +4,22 @@ typedef string CallCenterMetadataId
 
 /* Requests */
 struct TTeamGetRequest{
-	1: required CallCenterMetadataId teamId;
+	1: required CallCenterMetadataId teamMetadataId;
 	2: required string locale;
 }
 
 struct TLOBGetRequest{
-	1: required CallCenterMetadataId lobId;
+	1: required CallCenterMetadataId lobMetadataId;
 	2: required string locale;
 }
 
 struct TCenterGetRequest{
-	1: required CallCenterMetadataId centerId;
+	1: required CallCenterMetadataId centerMetadataId;
 	2: required string locale;
 }
 
 struct TBusinessGetRequest{
-	1: required CallCenterMetadataId businessId;
+	1: required CallCenterMetadataId businessMetadataId;
 	2: required string locale;
 }
 
@@ -45,22 +45,22 @@ struct TBusinessCreateRequest{
 
 /* Responses */
 struct TTeamGetResponse{
-	1: required CallCenterMetadataId teamId;
+	1: required CallCenterMetadataId teamMetadataId;
 	2: required string teamName;
 }
 
 struct TLOBGetResponse{
-	1: required CallCenterMetadataId lobId;
+	1: required CallCenterMetadataId lobMetadataId;
 	2: required string lobName;
 }
 
 struct TCenterGetResponse{
-	1: required CallCenterMetadataId centerId;
+	1: required CallCenterMetadataId centerMetadataId;
 	2: required string centerName;
 }
 
 struct TBusinessGetResponse{
-	1: required CallCenterMetadataId businessId;
+	1: required CallCenterMetadataId businessMetadataId;
 	2: required string businessName;
 }
 
@@ -98,13 +98,13 @@ service TCallcenterHierarchyService{
     		throws (1: TInternalServerException internalServiceException, 2:TItemNotFoundException itemNotFoundException, 3:TDBInternalException dbInternalException, 4:TBadRequestException badRequestException);
 
     /* List APIs */
-	list<TTeamGetResponse> listTeam(1: string locale)
+	list<TTeamGetResponse> listTeams(1: string locale)
 		throws (1: TInternalServerException internalServiceException, 2:TDBInternalException dbInternalException);
-	list<TLOBGetResponse> listLOB(1: string locale)
+	list<TLOBGetResponse> listLOBs(1: string locale)
 			throws (1: TInternalServerException internalServiceException, 2:TDBInternalException dbInternalException);
-	list<TCenterGetResponse> listCenter(1: string locale)
+	list<TCenterGetResponse> listCenters(1: string locale)
 			throws (1: TInternalServerException internalServiceException, 2:TDBInternalException dbInternalException);
-	list<TBusinessGetResponse> listBusiness(1: string locale)
+	list<TBusinessGetResponse> listBusinesses(1: string locale)
 			throws (1: TInternalServerException internalServiceException, 2:TDBInternalException dbInternalException);
 
     /* Create APIs */

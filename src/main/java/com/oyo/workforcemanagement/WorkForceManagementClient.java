@@ -3,27 +3,29 @@ package com.oyo.workforcemanagement;
 
 
 
+import com.oyo.metadata.TBusinessGetRequest;
 import com.oyo.metadata.TCallcenterHierarchyService;
+import com.oyo.metadata.TCenterGetRequest;
 import com.oyo.metadata.TTeamGetRequest;
-import com.oyo.workforce.*;
+import com.oyo.workforce.TAddEmployeeCallCentreHierarchyInfo;
+import com.oyo.workforce.TCallCentreHierarchyService;
+import com.oyo.workforce.TGetLevelInfoRequest;
 import org.apache.thrift.protocol.TJSONProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.THttpClient;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class WorkForceManagementClient {
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Local Host
-//    private static int port = 9000;
-//    private static String host = "localhost";
+    private static int port = 9000;
+    private static String host = "localhost";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //actual host
 //    private static String host = "10.50.21.106";
+//    private static String host ="acppr-0.metadataservice.incubate.oyorooms.ms";
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Services uri(one active at a time)
@@ -35,6 +37,7 @@ public class WorkForceManagementClient {
     // private static String uri = "roster_service";
    // private static String uri = "workforce_config";
     private static String uri = "callcentre_hierarchy";
+//    private static String uri = "metadata_service_cch";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
@@ -42,9 +45,9 @@ public class WorkForceManagementClient {
             //create HTTP client
 //            String url = "http://"+host+"/"+uri+"/"; //(for actual host)
 //            System.out.println(url);
-//            String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
+            String url = "http://"+host+":" + port + "/"+uri+"/"; //(for local host)
 //            System.out.println(url);
-            THttpClient httpClient  = new THttpClient("http://acppr-0.metadataservice.incubate.oyorooms.ms/metadata_service_cch/");
+            THttpClient httpClient  = new THttpClient(url);
             httpClient.setConnectTimeout(3000);
             TProtocol protocol = new TJSONProtocol(httpClient);
 
@@ -125,9 +128,12 @@ public class WorkForceManagementClient {
 //            System.out.println(client.deactivateConfig(tActDeactRequestData));
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------
             //Call Centre
-            TCallcenterHierarchyService.Client client = new TCallcenterHierarchyService.Client(protocol);
-            System.out.println(client.getTeam(new TTeamGetRequest("cch-team-d776d8ce-69aa-49ba-9f2e-f3748063ab38","en")));
-//            TCallCentreHierarchyService.Client client = new TCallCentreHierarchyService.Client(protocol);
+//            TCallcenterHierarchyService.Client client = new TCallcenterHierarchyService.Client(protocol);
+//            System.out.println(client.getCenter(new TCenterGetRequest("cch-center-a33d2f75-c70e-47a4-8d31-983df879ef23","en")));
+//            System.out.println(client.getBusiness(new TBusinessGetRequest("cch-business-c89c57ef-54fc-4d88-8280-04ab364e0109","en")));
+//            System.out.println(client.listBusinesses("en"));
+//            System.out.println(client.listCenters("en"));
+            TCallCentreHierarchyService.Client client = new TCallCentreHierarchyService.Client(protocol);
 //            TAddEmployeeCallCentreHierarchyInfo tAddEmployeeCallCentreHierarchyInfo = new TAddEmployeeCallCentreHierarchyInfo();
 //            tAddEmployeeCallCentreHierarchyInfo.setUserProfileId(2621800);
 //            tAddEmployeeCallCentreHierarchyInfo.setLevel1("cch-team-34b1e3b3-bf63-49a7-8bb1-ceee673f3604");
@@ -136,16 +142,10 @@ public class WorkForceManagementClient {
 //            tAddEmployeeCallCentreHierarchyInfo.setLevel4("cch-business-c89c57ef-54fc-4d88-8280-04ab364e0109");
 //            tAddEmployeeCallCentreHierarchyInfo.setActive(true);
 //            tAddEmployeeCallCentreHierarchyInfo.setCreatedById(23885944);
-//            tAddEmployeeCallCentreHierarchyInfo.setParentId(1);
 //            client.addEmployeeCallCentreHierarchyInfo(tAddEmployeeCallCentreHierarchyInfo);
-//            TGetLevelInfoRequest tGetLevelInfoRequest = new TGetLevelInfoRequest();
-//            tGetLevelInfoRequest.setUserProfileId(26218008);
-//            //System.out.println(client.getLevelInfo(tGetLevelInfoRequest));
-//            TGetParentIdRequest tGetParentIdRequest = new TGetParentIdRequest();
-//            tGetParentIdRequest.setUserProfileId(26218008);
-//            //System.out.println(client.getParentId(tGetParentIdRequest));
-//            TGetSubordinateEmployeeDetailsRequest tGetSubordinateEmployeeDetailsRequest = new TGetSubordinateEmployeeDetailsRequest();
-//            tGetSubordinateEmployeeDetailsRequest.setParentId(1);
+            TGetLevelInfoRequest tGetLevelInfoRequest = new TGetLevelInfoRequest();
+            tGetLevelInfoRequest.setUserProfileId(2621800);
+            System.out.println(client.getLevelInfo(tGetLevelInfoRequest));
 //            //System.out.println(client.getSubordinateEmployeeDetails(tGetSubordinateEmployeeDetailsRequest));
 
 

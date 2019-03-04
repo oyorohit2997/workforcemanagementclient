@@ -229,20 +229,12 @@ struct TAddEmployeeCallCentreHierarchyInfo{
     5: required MetaId level4;
     6: required i64 createdById;
     7: required bool active;
-    8: required i64 parentId;
 }
 
 struct TGetLevelInfoRequest{
     1: required i64 userProfileId;
 }
 
-struct TGetParentIdRequest{
-    1: required i64 userProfileId;
-}
-
-struct TGetSubordinateEmployeeDetailsRequest{
-    1: required i64 parentId;
-}
 // responses
 struct TEmployee {
     1: required i64 userProfileId;
@@ -297,13 +289,6 @@ struct TGetLevelInfoResponse{
      4: required string level4;
 }
 
-struct TGetParentIdResponse{
-    1: required i64 parentId;
-}
-
-struct TGetSubordinateEmployeeDetailsResponse{
-    1: required list<i64> subordinateEmployeeList;
-}
 
 //services
 
@@ -384,6 +369,4 @@ service TWorkLoadService {
 service TCallCentreHierarchyService{
     TResponseStatus addEmployeeCallCentreHierarchyInfo(1:TAddEmployeeCallCentreHierarchyInfo tAddCallCentreHierarchyInfo) throws (1:TInvalidUserProfileIdException tInvalidUserProfileIdException, 2:TMetaIdDoesNotExists tMetaIdDoesNotExists, 3:TEmployeeAlreadyExists tEmployeeAlreadyExists);
     TGetLevelInfoResponse getLevelInfo(TGetLevelInfoRequest tGetLevelInfoRequest) throws (1: TEmployeeDoesntExistException tEmployeeDoesntExistException);
-    TGetParentIdResponse getParentId(TGetParentIdRequest tGetParentIdRequest) throws (1: TEmployeeDoesntExistException tEmployeeDoesntExistException);
-    TGetSubordinateEmployeeDetailsResponse getSubordinateEmployeeDetails(TGetSubordinateEmployeeDetailsRequest tGetSubordinateEmployeeDetailsRequest);
 }
