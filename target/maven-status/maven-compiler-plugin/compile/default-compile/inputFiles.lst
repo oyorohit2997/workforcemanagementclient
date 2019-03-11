@@ -15,6 +15,7 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAccountHistoryException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TMiceDestinationCUDResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/mm/channel/accountmanagement/TAccountSearchResponse.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/hierarchy/HierarchyServiceInterface.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/orgdata/TMicroMarketDetails.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TToggleStatus.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TCabCategoryDetails.java
@@ -170,6 +171,7 @@
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeGetBusinessIdResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TPickupPointResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TEmployeeNotOnboardedException.java
+/Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/platform/hierarchy/ThriftException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/metadata/TMiceDestinationResponse.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TInvalidWorkLoadValueException.java
 /Users/oyo/IdeaProjects/workforcemanagementclient/target/generated-sources/gen-javabean/com/oyo/workforce/TWorkForceConfigService.java

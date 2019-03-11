@@ -12,6 +12,7 @@ com/oyo/workforce/TWorkLoadResponse$TWorkLoadResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createRestriction_args$createRestriction_argsTupleSchemeFactory.class
 com/oyo/metadata/TPaxRangeCUDResponse$TPaxRangeCUDResponseTupleSchemeFactory.class
 com/oyo/workforce/TRoasterMarkUnAvailableRequest$TRoasterMarkUnAvailableRequestTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$addRelation.class
 com/oyo/metadata/TMetaDataService$listAirports_args.class
 com/oyo/metadata/TMetaDataService$updatePaxRange_result$updatePaxRange_resultStandardScheme.class
 com/oyo/calendar/TCalendarService$AsyncProcessor$rescheduleEvent.class
@@ -34,6 +35,8 @@ com/oyo/metadata/TMetaDataService$updatePackageInclusion_result$updatePackageInc
 com/oyo/metadata/TCountry$TCountryTupleScheme.class
 com/oyo/platform/orgdata/TOrgDataService$getMicroMarket_args$getMicroMarket_argsStandardSchemeFactory.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_result$rescheduleEvent_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$registerHierarchy.class
 com/oyo/metadata/TMetaDataService$listPackageDestinations_result.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result$getAgents_resultTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceService$getEmployees_args$getEmployees_argsStandardScheme.class
@@ -58,9 +61,11 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$createRoomCategory.class
 com/oyo/workforce/TConfigDeactivated$1.class
 com/oyo/metadata/TMetaDataService$createVenuePolicy_args$createVenuePolicy_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCity_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args$registerHierarchy_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$getPackageDestination_args$getPackageDestination_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getMealPlan_result$getMealPlan_resultStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TAccountConfig$TAccountConfigTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args$getSiblings_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createSpecification$1.class
 com/oyo/metadata/TMetaDataService$batchGetPackageInclusions_args$batchGetPackageInclusions_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listPaymentPolicies.class
@@ -83,6 +88,7 @@ com/oyo/metadata/TMetaDataService$getRoomCategory_args$getRoomCategory_argsStand
 com/oyo/workforce/TWorkForceConfigService$createConfig_result$createConfig_resultTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_result$getAccount_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createCancellationPolicy.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result.class
 com/oyo/platform/orgdata/TOrgDataService$getMicroMarket_result$getMicroMarket_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createPropertyLevel_args$_Fields.class
 com/oyo/platform/orgdata/TOrgDataService$Processor$getUsers.class
@@ -185,6 +191,7 @@ com/oyo/metadata/TMetaDataService$createVenuePolicy_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAutoCompleteResponse$_Fields.class
 com/oyo/metadata/TMetaDataService$getAmenity_args$getAmenity_argsTupleSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOff_args$toggleOff_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args$_Fields.class
 com/oyo/metadata/TMetaDataService$updateMiceTag_result$updateMiceTag_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createCabCategory$1.class
 com/oyo/platform/orgdata/TOrgDataService$getOrgId_result$getOrgId_resultTupleScheme.class
@@ -237,6 +244,7 @@ com/oyo/mm/channel/accountmanagement/BillingAddressManagement$AsyncProcessor$get
 com/oyo/metadata/TPackageInclusionResponse$TPackageInclusionResponseTupleScheme.class
 com/oyo/metadata/TMetaDataService$createCancellationPolicy_result$createCancellationPolicy_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listFoodTypes_result$listFoodTypes_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getHierarchy.class
 com/oyo/metadata/TMetaDataService$batchGetVenuePolicies_args$_Fields.class
 com/oyo/metadata/TMetaDataService$updatePaymentPolicy_result$updatePaymentPolicy_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$updatePickupPoint_args$_Fields.class
@@ -271,11 +279,13 @@ com/oyo/metadata/TMetaDataService$listFoodCategories_result$_Fields.class
 com/oyo/metadata/TMetaDataService$getRestriction_result$getRestriction_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createFoodCategory_result$createFoodCategory_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePaymentPolicy_args$updatePaymentPolicy_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result$getDescendants_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createMiceTag$1.class
 com/oyo/mm/channel/accountmanagement/TAccountCreationException$TAccountCreationExceptionTupleScheme.class
 com/oyo/calendar/TCheckAvailabilityRequest$_Fields.class
 com/oyo/metadata/TAmenityCUDResponse$TAmenityCUDResponseTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$getBillingAddressesOfAccount_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result$getImmediateChildren_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updatePackageDestination$1.class
 com/oyo/platform/orgdata/TOrgDataService$getParent_args$getParent_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listMiceEvents_call.class
@@ -297,9 +307,11 @@ com/oyo/metadata/TMetaDataService$updateMiceEvent_args$updateMiceEvent_argsStand
 com/oyo/calendar/TCalendarService$scheduleEvent_result$scheduleEvent_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetSpecifications.class
 com/oyo/metadata/TMetaDataService$listPackageTags_args$listPackageTags_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result$getImmediateChildren_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$getLocality_args.class
 com/oyo/mm/channel/accountmanagement/TAccountStatus.class
 com/oyo/metadata/TPackageInclusionCUDResponse$TPackageInclusionCUDResponseTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args$registerHierarchy_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updatePackageDestination_args$updatePackageDestination_argsStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$createAccount_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TUpdateBillingAddressRequest$1.class
@@ -340,7 +352,9 @@ com/oyo/mm/channel/accountmanagement/TBillingAddressObject$TBillingAddressObject
 com/oyo/metadata/TItemNotFoundException$TItemNotFoundExceptionStandardScheme.class
 com/oyo/workforce/TEmployeeBusinessUpdateRequest$_Fields.class
 com/oyo/calendar/TCalendarService$AsyncProcessor$checkAvailability.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args$getImmediateChildren_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listPropertyLevel_result$listPropertyLevel_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result$addRelation_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createFoodType_result$createFoodType_resultStandardScheme.class
 com/oyo/workforce/TWorkForceService$getEmployees_result.class
 com/oyo/workforce/TToggleService$1.class
@@ -361,10 +375,12 @@ com/oyo/metadata/TMetaDataService$getRestriction_result.class
 com/oyo/metadata/TMetaDataService$getHotelCategory_result$getHotelCategory_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getState_args$getState_argsStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result$getImmediateParents_resultTupleScheme.class
 com/oyo/workforce/TInternalErrorException$_Fields.class
 com/oyo/metadata/TMetaDataService$getHotelCategory_args$_Fields.class
 com/oyo/metadata/TMetaDataService$Processor$updatePackageDestination.class
 com/oyo/metadata/TMetaDataService$createLocality_args$createLocality_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountSearchException$TAccountSearchExceptionTupleSchemeFactory.class
 com/oyo/metadata/TAmenityResponse$1.class
 com/oyo/metadata/TMetaDataService$getFoodCategory_result$getFoodCategory_resultTupleScheme.class
@@ -451,6 +467,7 @@ com/oyo/metadata/TFoodType.class
 com/oyo/metadata/TMetaDataService$updateMealPlan_args$updateMealPlan_argsStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOn_result$toggleOn_resultStandardScheme.class
 com/oyo/metadata/TMetadataStatus.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$createOrUpdateEntity$1.class
 com/oyo/metadata/TMetaDataService$batchGetVenuePolicies_result$batchGetVenuePolicies_resultStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TAccountResponse$TAccountResponseStandardSchemeFactory.class
 com/oyo/metadata/TPickupPoint$1.class
@@ -458,6 +475,7 @@ com/oyo/workforce/TEmployeeOffboardRequest$TEmployeeOffboardRequestStandardSchem
 com/oyo/metadata/TMetaDataService$listPackageDestinations_result$listPackageDestinations_resultStandardSchemeFactory.class
 com/oyo/metadata/TRoomCategoryCUDResponse$1.class
 com/oyo/workforce/TInvalidDateException$TInvalidDateExceptionStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args$addRelation_argsTupleSchemeFactory.class
 com/oyo/metadata/TStateResponse$TStateResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listSpecifications_result$listSpecifications_resultTupleScheme.class
 com/oyo/workforce/TWorkLoadService$AsyncProcessor.class
@@ -482,6 +500,7 @@ com/oyo/mm/channel/accountmanagement/BillingAddressManagement$AsyncProcessor$add
 com/oyo/platform/orgdata/TOrgDataService$getOrgId_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TUpdateBillingAddressRequest$TUpdateBillingAddressRequestStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateCity_args$updateCity_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args$getSiblings_argsStandardScheme.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_result$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createCity.class
 com/oyo/metadata/TMetaDataService$createSpecification_result$createSpecification_resultTupleScheme.class
@@ -513,6 +532,7 @@ com/oyo/mm/channel/accountmanagement/TAutoCompleteResponse$TAutoCompleteResponse
 com/oyo/metadata/TMonthCUDResponse$1.class
 com/oyo/metadata/TCancellationPolicyResponse.class
 com/oyo/metadata/TMetaDataService$getSpecification_result$getSpecification_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getImmediateChildren$1.class
 com/oyo/mm/channel/accountmanagement/TUpdateBillingAddressRequest$TUpdateBillingAddressRequestTupleSchemeFactory.class
 com/oyo/metadata/TPackageCategoryUpdateRequest$TPackageCategoryUpdateRequestStandardScheme.class
 com/oyo/metadata/TPackageTag$TPackageTagStandardSchemeFactory.class
@@ -520,6 +540,7 @@ com/oyo/metadata/TMiceDestinationResponse$TMiceDestinationResponseTupleScheme.cl
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccounts_args$getAccounts_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getCity_args$getCity_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createPackageTag$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args$getImmediateChildren_argsStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$getBillingAddressesOfAccount_args$getBillingAddressesOfAccount_argsStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$AsyncProcessor$toggleOn.class
 com/oyo/workforce/TInvalidUserProfileIdException.class
@@ -528,6 +549,7 @@ com/oyo/metadata/TMetaDataService$createPaymentPolicy_result.class
 com/oyo/metadata/TMetaDataService$getCity_result$getCity_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePropertyLevel_result.class
 com/oyo/metadata/TMetaDataService$batchGetAmenities_result$batchGetAmenities_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$Processor$financeApprovalRejected.class
 com/oyo/calendar/TCheckAvailabilityResponse$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listCancellationPolicies_call.class
@@ -546,6 +568,7 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$listStates.class
 com/oyo/metadata/TMetaDataService$updateCancellationPolicy_args$updateCancellationPolicy_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$listCabCategories.class
 com/oyo/metadata/TDBInternalException$TDBInternalExceptionStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$doesNodeExist_call.class
 com/oyo/metadata/TPackageDuration$TPackageDurationTupleScheme.class
 com/oyo/metadata/TMetaDataService$getAmenity_args$getAmenity_argsStandardSchemeFactory.class
 com/oyo/metadata/TMiceEventCUDResponse$TMiceEventCUDResponseStandardSchemeFactory.class
@@ -563,6 +586,7 @@ com/oyo/workforce/TWorkLoadResponse$TWorkLoadResponseStandardScheme.class
 com/oyo/workforce/TToggleService$toggleOff_result.class
 com/oyo/metadata/TMetaDataService$createHotelCategory_args$createHotelCategory_argsTupleScheme.class
 com/oyo/workforce/TEmployeeOffboardRequest$TEmployeeOffboardRequestTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args.class
 com/oyo/workforce/TRoasterMarkUnAvailableRequest.class
 com/oyo/calendar/TCheckAvailabilityResponse$TCheckAvailabilityResponseTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsCode_result$getAccountFromCrsCode_resultStandardSchemeFactory.class
@@ -570,6 +594,7 @@ com/oyo/metadata/TMetaDataService$updateCancellationPolicy_args$updateCancellati
 com/oyo/metadata/TMetaDataService$updateRestriction_args$updateRestriction_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$createPropertyLevel_args$createPropertyLevel_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listPackageDestinations_result$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args.class
 com/oyo/metadata/TMetaDataService$getPackageInclusion_args$getPackageInclusion_argsStandardScheme.class
 com/oyo/workforce/TWorkLoadResponse.class
 com/oyo/metadata/TMetaDataService$getPackageDestination_result$getPackageDestination_resultTupleScheme.class
@@ -583,6 +608,7 @@ com/oyo/mm/channel/accountmanagement/BillingAddressManagement$addBillingAddresse
 com/oyo/workforce/TActDeactRequestData$_Fields.class
 com/oyo/metadata/THotelCategoryResponse$THotelCategoryResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result$getDescendants_resultTupleSchemeFactory.class
 com/oyo/metadata/THotelCategoryCUDResponse$THotelCategoryCUDResponseStandardSchemeFactory.class
 com/oyo/platform/orgdata/TMicroMarket$1.class
 com/oyo/workforce/TToggleOffRequest$TToggleOffRequestStandardSchemeFactory.class
@@ -643,6 +669,7 @@ com/oyo/metadata/TRestrictionResponse$TRestrictionResponseStandardSchemeFactory.
 com/oyo/metadata/TPickupPointResponse$TPickupPointResponseStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_result$getAccount_resultStandardSchemeFactory.class
 com/oyo/metadata/TVenuePolicyCUDResponse$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args$doesNodeExist_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createPackageCategory_result$createPackageCategory_resultStandardScheme.class
 com/oyo/workforce/TWorkForceConfigService$deactivateConfig_args$_Fields.class
 com/oyo/metadata/TMetaDataService$listAmenities_result$listAmenities_resultStandardScheme.class
@@ -650,6 +677,7 @@ com/oyo/metadata/TMetaDataService$AsyncClient$updateCancellationPolicy_call.clas
 com/oyo/workforce/TGetEmployeesRequest$TGetEmployeesRequestStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePaxRange_result.class
 com/oyo/platform/orgdata/TOrgDataService$getOrgId_args$getOrgId_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args$getAncestors_argsStandardSchemeFactory.class
 com/oyo/workforce/TInvalidDateException$TInvalidDateExceptionTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_args.class
 com/oyo/platform/orgdata/TOrgDataService$findMMById_result$findMMById_resultStandardSchemeFactory.class
@@ -677,16 +705,20 @@ com/oyo/metadata/TPackageDurationCUDResponse$TPackageDurationCUDResponseTupleSch
 com/oyo/metadata/TPaxRangeResponse.class
 com/oyo/metadata/TStateCUDResponse$TStateCUDResponseTupleScheme.class
 com/oyo/metadata/TSpecificationCUDResponse$TSpecificationCUDResponseTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result$getHierarchy_resultTupleScheme.class
 com/oyo/metadata/TMiceEventCUDResponse$TMiceEventCUDResponseTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$deleteAccount_result$deleteAccount_resultStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TCreateAccountRequest$1.class
 com/oyo/metadata/TMetaDataService$updatePackageInclusion_args$updatePackageInclusion_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/ThriftException$ThriftExceptionStandardScheme.class
 com/oyo/metadata/TMetaDataService$getMiceTag_result$getMiceTag_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$doesNodeExist$1.class
 com/oyo/metadata/TCatalogSection$TCatalogSectionTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$deleteEvent_result$deleteEvent_resultTupleSchemeFactory.class
 com/oyo/metadata/TAiportUpdateRequest$TAiportUpdateRequestTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$Processor$searchAccounts.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getMealPlan.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args.class
 com/oyo/mm/channel/accountmanagement/TCreateBillingAddressRequest$_Fields.class
 com/oyo/metadata/TMetaDataService$createSpecification_args.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsId_result$getAccountFromCrsId_resultTupleScheme.class
@@ -709,6 +741,7 @@ com/oyo/metadata/TMetaDataService$getPackageDuration_args.class
 com/oyo/metadata/TPropertyLevel$TPropertyLevelStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getVenuePolicy_args$_Fields.class
 com/oyo/metadata/TAmenityResponse$_Fields.class
+com/oyo/platform/hierarchy/ThriftException$1.class
 com/oyo/metadata/TCancellationPolicy$1.class
 com/oyo/workforce/TWorkForceConfigService$AsyncClient$getAgents_call.class
 com/oyo/metadata/TMetaDataService$listPackageCategories_result$listPackageCategories_resultTupleSchemeFactory.class
@@ -787,6 +820,7 @@ com/oyo/metadata/TMetaDataService$listMiceEvents_result$listMiceEvents_resultSta
 com/oyo/metadata/TPackageInclusionCUDResponse$1.class
 com/oyo/platform/orgdata/TOrgDataService$findMMById_args$findMMById_argsStandardScheme.class
 com/oyo/workforce/TToggleStatus$TToggleStatusTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args$removeEntity_argsStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$getBillingAddressesOfAccount_result.class
 com/oyo/metadata/TMetaDataService$createPaymentPolicy_result$createPaymentPolicy_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createMiceTag_result$createMiceTag_resultTupleScheme.class
@@ -797,6 +831,7 @@ com/oyo/calendar/TDeleteEventResponse$1.class
 com/oyo/metadata/TMetaDataService$updateMonth_result$updateMonth_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCancellationPolicy_args$createCancellationPolicy_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getSpecification.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result.class
 com/oyo/workforce/TToggleOffRequest$TToggleOffRequestTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TAddressObject$TAddressObjectStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMiceTags_args.class
@@ -843,6 +878,7 @@ com/oyo/workforce/TWorkForceConfigService$updateConfig_args$updateConfig_argsSta
 com/oyo/workforce/TWorkForceConfigService$updateConfig_result$updateConfig_resultTupleScheme.class
 com/oyo/workforce/TToggleOnRequest$TToggleOnRequestTupleScheme.class
 com/oyo/calendar/TCalendarService$scheduleEvent_result$scheduleEvent_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$removeRelation$1.class
 com/oyo/metadata/TMetaDataService$AsyncClient$updateMiceDestination_call.class
 com/oyo/workforce/TToggleService$AsyncClient$toggleOn_call.class
 com/oyo/metadata/TMetaDataService$getPaxRange_result.class
@@ -869,6 +905,7 @@ com/oyo/metadata/TItemNotFoundException$TItemNotFoundExceptionTupleSchemeFactory
 com/oyo/mm/channel/accountmanagement/TSizeExceededException$_Fields.class
 com/oyo/metadata/TMetaDataService$listCountries_args$listCountries_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$listStates_result$listStates_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getSiblings_call.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listCancellationPolicies$1.class
 com/oyo/workforce/TRosterService$markUnavailable_args$markUnavailable_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$listMealPlans.class
@@ -918,6 +955,7 @@ com/oyo/workforce/TRoasterAvailabilityRequest$TRoasterAvailabilityRequestStandar
 com/oyo/workforce/TToggleService.class
 com/oyo/metadata/TMetaDataService$listMiceTags_result.class
 com/oyo/workforce/TEmployeeOnBoardingService.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args$getHierarchy_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getLocality_result$getLocality_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$getSpecificationWithName.class
 com/oyo/workforce/TToggleOnRequest$_Fields.class
@@ -945,6 +983,7 @@ com/oyo/platform/orgdata/TOrgDataService$1.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsId_args.class
 com/oyo/calendar/TCalendarService$checkAvailability_result$checkAvailability_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listLocalities_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args$getAncestors_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getSpecification_result$getSpecification_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMonths_result$listMonths_resultTupleScheme.class
 com/oyo/metadata/TPickupPoint$TPickupPointStandardScheme.class
@@ -953,6 +992,7 @@ com/oyo/metadata/TMetaDataService$updateHotelCategory_args$updateHotelCategory_a
 com/oyo/workforce/TEmployeeOnBoardingService$Processor$getEmployeesBusinessId.class
 com/oyo/metadata/TMetaDataService$listSpecifications_result$listSpecifications_resultStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeBusinessUpdateRequest$TEmployeeBusinessUpdateRequestStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args$getSiblings_argsTupleScheme.class
 com/oyo/metadata/TFoodCategory$TFoodCategoryStandardSchemeFactory.class
 com/oyo/workforce/TInvalidVersionException$TInvalidVersionExceptionTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listSpecifications$1.class
@@ -989,11 +1029,13 @@ com/oyo/workforce/TGetEmployeesResponse$1.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$deleteAccount_args$deleteAccount_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalGranted_result$_Fields.class
 com/oyo/metadata/TMetaDataService$listMealPlans_args$listMealPlans_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/ThriftException.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccounts_result$getAccounts_resultStandardScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$onboardEmployee_result$onboardEmployee_resultTupleSchemeFactory.class
 com/oyo/workforce/TToggleStatus$_Fields.class
 com/oyo/workforce/TRoasterAvailabilityResponse$TRoasterAvailabilityResponseTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result$getAncestors_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getState_args$getState_argsTupleSchemeFactory.class
 com/oyo/metadata/TVenuePolicyResponse$_Fields.class
 com/oyo/metadata/TRoomCategoryCUDResponse$TRoomCategoryCUDResponseTupleSchemeFactory.class
@@ -1020,6 +1062,7 @@ com/oyo/platform/orgdata/TMicroMarketDetails$TMicroMarketDetailsTupleScheme.clas
 com/oyo/metadata/TMetaDataService$createMiceEvent_args$createMiceEvent_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listCatalogSections_result$_Fields.class
 com/oyo/metadata/TMetaDataService$getPackageDestination_args$getPackageDestination_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listPropertyLevel.class
 com/oyo/platform/orgdata/TOrgDataService$findMMByName_args$findMMByName_argsTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$AsyncClient$isEmployeeOnboarded_call.class
@@ -1037,6 +1080,7 @@ com/oyo/metadata/TMetaDataService$createCountry_args$_Fields.class
 com/oyo/metadata/TMetaDataService$updateCountry_args$updateCountry_argsStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TUpdateBillingAddressRequest.class
 com/oyo/metadata/TMetaDataService$getFoodType_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result$getImmediateParents_resultTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/Error$ErrorStandardScheme.class
 com/oyo/metadata/TMetaDataService$createFoodCategory_result$createFoodCategory_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$batchGetFoodCategories_args.class
@@ -1076,6 +1120,7 @@ com/oyo/metadata/TMetaDataService$batchGetCities_args$batchGetCities_argsStandar
 com/oyo/workforce/TWorkforceConfig$TWorkforceConfigStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetCities$1.class
 com/oyo/metadata/TMetaDataService$AsyncClient$updatePackageCategory_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args$getHierarchy_argsStandardSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$getUsers_result$getUsers_resultTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$Client$Factory.class
 com/oyo/metadata/TMetaDataService$updatePackageTag_args$updatePackageTag_argsTupleSchemeFactory.class
@@ -1097,6 +1142,7 @@ com/oyo/metadata/TMetaDataService$updatePropertyLevel_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncIface.class
 com/oyo/metadata/TMetaDataService$batchGetVenuePolicies_result$batchGetVenuePolicies_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$getCatalogSection_result$getCatalogSection_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args$_Fields.class
 com/oyo/metadata/TLocality$TLocalityStandardScheme.class
 com/oyo/metadata/TSpecificationCreateRequest$1.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AutoCompleteName_result$AutoCompleteName_resultTupleSchemeFactory.class
@@ -1118,15 +1164,18 @@ com/oyo/workforce/TWorkForceService$getEmployees_result$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listVenuePolicies$1.class
 com/oyo/workforce/TInvalidDateException.class
 com/oyo/metadata/TPaxRange$TPaxRangeStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result$doesNodeExist_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateAirportDetails.class
 com/oyo/mm/channel/accountmanagement/TAccountVersionResponse$1.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressResponseDeleteException$TBillingAddressResponseDeleteExceptionTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result.class
 com/oyo/metadata/TMetaDataService$createPropertyLevel_result$createPropertyLevel_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createMiceEvent_result$createMiceEvent_resultTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_result$offboardEmployee_resultStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$Client$Factory.class
 com/oyo/metadata/TMetaDataService$updateRoomCategory_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$updateBillingAddress_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args$createOrUpdateEntity_argsTupleScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_args$isEmployeeOnboarded_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCountry_result$createCountry_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$batchGetPackageInclusions_args.class
@@ -1135,6 +1184,7 @@ com/oyo/metadata/TMetaDataService$updateCountry_args$updateCountry_argsTupleSche
 com/oyo/metadata/TMetaDataService$createCancellationPolicy_result$createCancellationPolicy_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listRestrictions_args$listRestrictions_argsTupleSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$getOrgId_args$getOrgId_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result.class
 com/oyo/metadata/TMonthResponse$_Fields.class
 com/oyo/metadata/TPropertyLevelResponse$TPropertyLevelResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$batchGetPackageInclusions_result$_Fields.class
@@ -1154,6 +1204,7 @@ com/oyo/platform/orgdata/TOrgDataService$getUsers_result$getUsers_resultStandard
 com/oyo/metadata/TMetaDataService$Processor$getSightSeeingPoint.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$updateBillingAddress_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getCatalogSection.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result.class
 com/oyo/metadata/TMetaDataService$updatePickupPoint_result$updatePickupPoint_resultTupleSchemeFactory.class
 com/oyo/metadata/TStatus.class
 com/oyo/workforce/TWorkForceService$AsyncClient.class
@@ -1167,6 +1218,7 @@ com/oyo/metadata/TMetaDataService$Iface.class
 com/oyo/metadata/TMetaDataService$updateRoomCategory_result$updateRoomCategory_resultStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$AsyncProcessor$getEmployees$1.class
 com/oyo/metadata/TMetaDataService$createPackageTag_args$createPackageTag_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args$getSiblings_argsStandardSchemeFactory.class
 com/oyo/workforce/TToggleOnRequest$TToggleOnRequestStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$getMiceDestination.class
 com/oyo/metadata/TMetaDataService$updatePackageDuration_args$updatePackageDuration_argsStandardScheme.class
@@ -1183,6 +1235,7 @@ com/oyo/mm/channel/accountmanagement/TAccountUpdateException$TAccountUpdateExcep
 com/oyo/workforce/TRoasterAvailabilityResponse$_Fields.class
 com/oyo/metadata/TMetaDataService$batchGetVenuePolicies_args$batchGetVenuePolicies_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listRestrictions_result$listRestrictions_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args$removeRelation_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$AutoCompleteName$1.class
 com/oyo/metadata/TVenuePolicy.class
 com/oyo/metadata/TMetaDataService$listRestrictions_result$listRestrictions_resultTupleScheme.class
@@ -1190,21 +1243,25 @@ com/oyo/mm/channel/accountmanagement/TBillingAddressSearchException$TBillingAddr
 com/oyo/metadata/TMetaDataService$getPackageDuration_args$getPackageDuration_argsTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceService$AsyncClient$isEmployeeAvailableInRange_call.class
 com/oyo/metadata/TDBInternalException$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result$_Fields.class
 com/oyo/workforce/TToggleService$isToggleOn_result$isToggleOn_resultTupleScheme.class
 com/oyo/metadata/TAmenityCUDResponse$1.class
 com/oyo/metadata/TMetaDataService$getPickupPoint_args$getPickupPoint_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$removeEntity_call.class
 com/oyo/metadata/TMetaDataService$createMiceEvent_args$createMiceEvent_argsTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$Processor$deleteAccount.class
 com/oyo/metadata/TMetaDataService$createMiceTag_args$createMiceTag_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listPickupPoints_args$listPickupPoints_argsTupleSchemeFactory.class
 com/oyo/metadata/TSpecificationUpdateRequest$1.class
 com/oyo/workforce/TWorkLoad$TWorkLoadTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getHierarchy_call.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getMiceTag_call.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createMiceDestination_call.class
 com/oyo/metadata/TMetaDataService$createCabCategory_result$createCabCategory_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$listPackageInclusions_result$listPackageInclusions_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getCountry_args$getCountry_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TAccountUpdateException$TAccountUpdateExceptionTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args$removeRelation_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateState_result$updateState_resultTupleScheme.class
 com/oyo/mm/channel/accountmanagement/TAlreadyDeletedException$TAlreadyDeletedExceptionTupleSchemeFactory.class
 com/oyo/workforce/TRoasterAvailabilityResponse$TRoasterAvailabilityResponseStandardScheme.class
@@ -1223,6 +1280,7 @@ com/oyo/platform/orgdata/TOrgDataService$getOrgId_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createLocality$1.class
 com/oyo/workforce/TToggleGetResponse.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getPackageTag.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result$removeEntity_resultStandardScheme.class
 com/oyo/workforce/TWorkLoadService$addLoad_args.class
 com/oyo/metadata/TMetaDataService$getMealPlan_args.class
 com/oyo/metadata/TMetaDataService$listSightseeingPoints_result$listSightseeingPoints_resultTupleSchemeFactory.class
@@ -1246,6 +1304,7 @@ com/oyo/metadata/TMiceEventResponse.class
 com/oyo/metadata/TMetaDataService$createLocality_args$createLocality_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateMiceTag_args$updateMiceTag_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_args$updateCabCategory_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$addRelation.class
 com/oyo/metadata/TMetaDataService$createPackageCategory_args$createPackageCategory_argsTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$updateAccount.class
 com/oyo/workforce/TConfigDeactivated$TConfigDeactivatedStandardSchemeFactory.class
@@ -1276,6 +1335,7 @@ com/oyo/workforce/TEmployeeOnBoardingService$AsyncProcessor$offboardEmployee$1.c
 com/oyo/metadata/TMetaDataService$createMiceDestination_result$createMiceDestination_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetPackageTags_result$batchGetPackageTags_resultStandardScheme.class
 com/oyo/metadata/TVenuePolicy$TVenuePolicyStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args$getDescendants_argsTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeDoesntExistException$TEmployeeDoesntExistExceptionStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePackageCategory_args$updatePackageCategory_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$listCabCategories_result.class
@@ -1392,6 +1452,7 @@ com/oyo/metadata/TMetaDataService$listFoodCategories_result$listFoodCategories_r
 com/oyo/metadata/TMiceEventResponse$_Fields.class
 com/oyo/metadata/TRoomCategoryResponse$TRoomCategoryResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getCancellationPolicy.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args.class
 com/oyo/platform/orgdata/TOrgDataService$getOrgId_args$getOrgId_argsTupleScheme.class
 com/oyo/metadata/TPackageTagCUDResponse$TPackageTagCUDResponseStandardScheme.class
 com/oyo/metadata/TSightseeingPointCUDResponse.class
@@ -1416,8 +1477,10 @@ com/oyo/platform/orgdata/TOrgDataService$findMMById_args$findMMById_argsTupleSch
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$getAccountFromCrsCode.class
 com/oyo/workforce/TWorkForceConfigService$AsyncClient$deactivateConfig_call.class
 com/oyo/workforcemanagement/WorkForceManagementClient.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result$getSiblings_resultStandardSchemeFactory.class
 com/oyo/metadata/TCabCategoryCUDResponse$_Fields.class
 com/oyo/metadata/TAmenityCUDResponse$TAmenityCUDResponseStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result$registerHierarchy_resultTupleScheme.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_result$isEmployeeAvailableInRange_resultTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$getEmployeesBusinessId_args$getEmployeesBusinessId_argsStandardScheme.class
 com/oyo/workforce/TInvalidRequest.class
@@ -1436,6 +1499,7 @@ com/oyo/workforce/TRosterService$markAvailable_result.class
 com/oyo/workforce/TToggleService$isToggleOn_args$isToggleOn_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$Processor$createPropertyLevel.class
 com/oyo/calendar/TScheduleEventResponse$TScheduleEventResponseTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountDeleteException$1.class
 com/oyo/metadata/TMetaDataService$listPickupPoints_args$_Fields.class
 com/oyo/metadata/TPackageDestinationCUDResponse.class
@@ -1465,10 +1529,12 @@ com/oyo/metadata/TMetaDataService$AsyncClient$getAmenity_call.class
 com/oyo/metadata/TMetaDataService$listMiceEvents_args.class
 com/oyo/metadata/TMetaDataService$createMiceDestination_result.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncClient$createAccount_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result$createOrUpdateEntity_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$createPackageDuration.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args$offboardEmployee_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listVenuePolicies_result$_Fields.class
 com/oyo/metadata/TMetaDataService$getPackageDestination_result$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result$createOrUpdateEntity_resultTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService$scheduleEvent_args$scheduleEvent_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateRoomCategory_args$_Fields.class
 com/oyo/metadata/TMiceDestinationCUDResponse$_Fields.class
@@ -1518,6 +1584,7 @@ com/oyo/metadata/TMetaDataService$batchGetMiceTags_result$_Fields.class
 com/oyo/metadata/TDropPointResponse$_Fields.class
 com/oyo/metadata/TStateResponse$TStateResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$getPropertyLevel_result$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getHierarchy.class
 com/oyo/workforce/TRoasterMarkAvailableRequest$1.class
 com/oyo/metadata/TMetaDataService$Processor$createRestriction.class
 com/oyo/metadata/TMetaDataService$Processor$listMiceTags.class
@@ -1625,6 +1692,7 @@ com/oyo/metadata/TMetaDataService$getRestriction_args$getRestriction_argsStandar
 com/oyo/metadata/TMetaDataService$AsyncClient$updateFoodCategory_call.class
 com/oyo/metadata/TMetaDataService$batchGetSpecifications_result$batchGetSpecifications_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updatePickupPoint.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result$getAncestors_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$getPackageInclusion_args$getPackageInclusion_argsTupleScheme.class
 com/oyo/workforce/TConfigDeactivated$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_result.class
@@ -1653,6 +1721,7 @@ com/oyo/metadata/TMetaDataService$createPaxRange_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalRejected_result$financeApprovalRejected_resultStandardSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOff_result$toggleOff_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMiceTags_args$listMiceTags_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Client.class
 com/oyo/metadata/TMetaDataService$updateFoodType_args$updateFoodType_argsTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$getAccounts$1.class
 com/oyo/workforce/TToggleGetRequest.class
@@ -1673,6 +1742,7 @@ com/oyo/metadata/TMetaDataService$AsyncClient$getCatalogSection_call.class
 com/oyo/mm/channel/accountmanagement/TSearchAccountRequest$TSearchAccountRequestStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TNoBillingAddressException.class
 com/oyo/metadata/TMetaDataService$Processor$batchGetFoodCategories.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result$removeEntity_resultTupleScheme.class
 com/oyo/platform/orgdata/TOrgDataService$findMMByName_args$findMMByName_argsStandardScheme.class
 com/oyo/metadata/TPackageCategoryGETResponse$TPackageCategoryGETResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMealPlans_args$_Fields.class
@@ -1713,8 +1783,10 @@ com/oyo/metadata/TPickupPoint$TPickupPointTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AutoCompleteName_result$AutoCompleteName_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$listPackageDestinations_args$listPackageDestinations_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getHierarchy$1.class
 com/oyo/metadata/TMetaDataService$batchGetMiceEvents_result$batchGetMiceEvents_resultStandardScheme.class
 com/oyo/metadata/TMiceEvent$TMiceEventTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result$getImmediateParents_resultStandardSchemeFactory.class
 com/oyo/metadata/TCountry.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listMealPlans_call.class
 com/oyo/metadata/TDropPointResponse$TDropPointResponseTupleScheme.class
@@ -1760,6 +1832,7 @@ com/oyo/metadata/TMetaDataService$updateSightseeingPoint_args$updateSightseeingP
 com/oyo/metadata/TMetaDataService$AsyncClient$getCity_call.class
 com/oyo/metadata/TMetaDataService$listMiceDestinations_args$_Fields.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_result$isEmployeeOnboarded_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result$getSiblings_resultStandardScheme.class
 com/oyo/metadata/TCancellationPolicyResponse$TCancellationPolicyResponseTupleSchemeFactory.class
 com/oyo/workforce/TInvalidVersionException$TInvalidVersionExceptionStandardSchemeFactory.class
 com/oyo/metadata/TPickupPoint$TPickupPointTupleSchemeFactory.class
@@ -1783,9 +1856,11 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$createCabCategory.class
 com/oyo/metadata/TMetaDataService$listFoodCategories_result$listFoodCategories_resultStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_args$getAccount_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listPackageInclusions_args$listPackageInclusions_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args$createOrUpdateEntity_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getPaxRange_result$getPaxRange_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetPackageTags$1.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$getAccountFromCrsId.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result$getHierarchy_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateVenuePolicy_args$updateVenuePolicy_argsStandardSchemeFactory.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_args$rescheduleEvent_argsStandardSchemeFactory.class
 com/oyo/workforce/TWorkLoadService$Iface.class
@@ -1793,6 +1868,8 @@ com/oyo/metadata/TLocalityResponse$TLocalityResponseTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetMonths_result$batchGetMonths_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$getHotelCategory_result$_Fields.class
 com/oyo/metadata/TMetaDataService$createAirport_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result$removeEntity_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args$getAncestors_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$Processor$listPackageDurations.class
 com/oyo/metadata/TMetaDataService$listMiceTags_args$listMiceTags_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$updatePackageCategory.class
@@ -1828,16 +1905,19 @@ com/oyo/metadata/TPaxRangeResponse$TPaxRangeResponseStandardSchemeFactory.class
 com/oyo/metadata/TPaymentPolicyResponse$TPaymentPolicyResponseStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$createAccount_args$createAccount_argsStandardScheme.class
 com/oyo/metadata/TLocality$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result.class
 com/oyo/metadata/TMetaDataService$batchGetCities_result$batchGetCities_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPackageDurations_result$listPackageDurations_resultTupleScheme.class
 com/oyo/mm/channel/accountmanagement/TAccountObject$TAccountObjectTupleSchemeFactory.class
 com/oyo/workforce/TToggleService$toggleOn_result$toggleOn_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/ThriftException$ThriftExceptionStandardSchemeFactory.class
 com/oyo/calendar/TScheduleEventRequest$TScheduleEventRequestStandardScheme.class
 com/oyo/workforce/TWorkLoadService$Processor$addLoad.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createSpecification_call.class
 com/oyo/metadata/TMetaDataService$getState_result$getState_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateFoodCategory_args$updateFoodCategory_argsStandardScheme.class
 com/oyo/metadata/TPackageInclusion$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getImmediateChildren.class
 com/oyo/metadata/TMetaDataService$updatePackageDuration_result$updatePackageDuration_resultTupleSchemeFactory.class
 com/oyo/platform/orgdata/TMicroMarketDetails$_Fields.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_result.class
@@ -1847,6 +1927,7 @@ com/oyo/metadata/TMetaDataService$updateState_args$updateState_argsStandardSchem
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateSightseeingPoint$1.class
 com/oyo/workforce/TRosterService$markAvailable_result$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncClient$batchGetPackageInclusions_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args$doesNodeExist_argsStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args$offboardEmployee_argsTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TCreateBillingAddressRequest$TCreateBillingAddressRequestTupleSchemeFactory.class
 com/oyo/calendar/TScheduleEventRequest$TScheduleEventRequestTupleSchemeFactory.class
@@ -1865,6 +1946,7 @@ com/oyo/metadata/TCatalogSectionResponse.class
 com/oyo/metadata/TMetaDataService$getLocality_result.class
 com/oyo/mm/channel/accountmanagement/TAutoCompleteResponse$TAutoCompleteResponseStandardScheme.class
 com/oyo/metadata/TAiportGETResponse$TAiportGETResponseTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result.class
 com/oyo/metadata/TMetaDataService$createMiceEvent_result$createMiceEvent_resultStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listRestrictions.class
@@ -1884,8 +1966,12 @@ com/oyo/metadata/TMetaDataService$AsyncClient$listPaxRanges_call.class
 com/oyo/metadata/TMetaDataService$listStates_args.class
 com/oyo/metadata/TMetaDataService$batchGetAmenities_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getPackageDuration.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountCreationException$TAccountCreationExceptionTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$searchAccounts_args$searchAccounts_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$registerHierarchy$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args.class
 com/oyo/metadata/TDropPoint$TDropPointStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccount_args$_Fields.class
 com/oyo/workforce/TInvalidRequest$TInvalidRequestTupleSchemeFactory.class
@@ -1921,10 +2007,12 @@ com/oyo/metadata/TMetaDataService$batchGetPackageTags_args$batchGetPackageTags_a
 com/oyo/metadata/TMetaDataService$createPaxRange_result$createPaxRange_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMealPlans_result$_Fields.class
 com/oyo/metadata/TMetaDataService$Processor$createSightseeingPoint.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result$getHierarchy_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getRoomCategory_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/TGetBillingAddressesResponse$TGetBillingAddressesResponseTupleScheme.class
 com/oyo/workforce/TWorkLoadGetRequest$1.class
 com/oyo/metadata/TMetaDataService$Processor$listPackageDestinations.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result$doesNodeExist_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getRestriction_result$getRestriction_resultStandardScheme.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$addBillingAddressesToAccount_args$addBillingAddressesToAccount_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$updateRoomCategory.class
@@ -1973,15 +2061,18 @@ com/oyo/workforce/TEmployeeResponse$TEmployeeResponseStandardScheme.class
 com/oyo/workforce/TInternalErrorException$TInternalErrorExceptionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetMonths$1.class
 com/oyo/metadata/TAiportCreateRequest$TAiportCreateRequestStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result$_Fields.class
 com/oyo/metadata/TMetaDataService$listMealPlans_args$listMealPlans_argsTupleScheme.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncProcessor$getOrgId.class
 com/oyo/workforce/TWorkLoadService$getLoad_result.class
 com/oyo/metadata/TFoodTypeResponse$TFoodTypeResponseStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result$removeEntity_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listStates_call.class
 com/oyo/metadata/TMetaDataService$updateCountry_args$updateCountry_argsStandardScheme.class
 com/oyo/workforce/TWorkLoadService$AsyncIface.class
 com/oyo/metadata/TMetaDataService$createPackageCategory_result$createPackageCategory_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result$getImmediateChildren_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listCities_args$listCities_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$createAirport_result$createAirport_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listPackageTags_call.class
@@ -2024,6 +2115,7 @@ com/oyo/workforce/TWorkForceService$Processor$isEmployeeAvailableNow.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listRoomCategories.class
 com/oyo/mm/channel/accountmanagement/AccountManagement.class
 com/oyo/metadata/TMetaDataService$listAmenities_result$listAmenities_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$addRelation$1.class
 com/oyo/metadata/TMealPlanGETReponse$TMealPlanGETReponseStandardSchemeFactory.class
 com/oyo/workforce/TDataAlreadyExist$TDataAlreadyExistTupleScheme.class
 com/oyo/metadata/TLocalityResponse$1.class
@@ -2056,6 +2148,7 @@ com/oyo/platform/orgdata/TOrgDataService$getUsers_args$getUsers_argsStandardSche
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listPackageDestinations.class
 com/oyo/metadata/TMetaDataService$updatePropertyLevel_args$updatePropertyLevel_argsTupleScheme.class
 com/oyo/metadata/TPackageDurationCUDResponse$TPackageDurationCUDResponseTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getAncestors_call.class
 com/oyo/workforce/TDataBaseError$TDataBaseErrorStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createFoodCategory_args$createFoodCategory_argsTupleScheme.class
 com/oyo/metadata/TPackageDestinationCUDResponse$1.class
@@ -2128,6 +2221,7 @@ com/oyo/workforce/TConfigNotFound$TConfigNotFoundStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPackageDurations_args$_Fields.class
 com/oyo/metadata/TMetaDataService$listPackageTags_args$listPackageTags_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getAmenity_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getDescendants.class
 com/oyo/metadata/TRestrictionCUDResponse$TRestrictionCUDResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateMiceDestination_args$updateMiceDestination_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$listMiceDestinations_args$listMiceDestinations_argsStandardSchemeFactory.class
@@ -2154,13 +2248,16 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$listCountries$1.class
 com/oyo/metadata/TMetaDataService$batchGetSpecifications_args.class
 com/oyo/metadata/TMetaDataService$listSpecifications_args$listSpecifications_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$getMonth_args$getMonth_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getImmediateParents.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressResponseDeleteException$TBillingAddressResponseDeleteExceptionStandardSchemeFactory.class
 com/oyo/metadata/TPaxRangeResponse$TPaxRangeResponseTupleSchemeFactory.class
 com/oyo/metadata/TSpecificationUpdateRequest$TSpecificationUpdateRequestStandardScheme.class
 com/oyo/metadata/TMetaDataService$createMealPlan_result$createMealPlan_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args$getImmediateChildren_argsStandardScheme.class
 com/oyo/platform/orgdata/TOrgDataService$findMMByName_args$findMMByName_argsTupleScheme.class
 com/oyo/workforce/TInvalidWorkLoadValueException$TInvalidWorkLoadValueExceptionTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listVenuePolicies_result$listVenuePolicies_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result$getDescendants_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getSpecificationWithName_call.class
 com/oyo/workforce/TEmployeeDoesntExistException$TEmployeeDoesntExistExceptionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getPackageDuration_result$getPackageDuration_resultTupleSchemeFactory.class
@@ -2186,6 +2283,7 @@ com/oyo/metadata/TFoodCategory$TFoodCategoryTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$deleteAccount_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TCountryCode.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getSpecification$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result$getImmediateChildren_resultStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsId_args$getAccountFromCrsId_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateCatalogSection_result$updateCatalogSection_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateHotelCategory_result.class
@@ -2210,8 +2308,10 @@ com/oyo/metadata/TMetaDataService$createVenuePolicy_result$createVenuePolicy_res
 com/oyo/workforce/TMongoDocDoesntExistException$TMongoDocDoesntExistExceptionStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TAutoCompleteResponse$1.class
 com/oyo/platform/orgdata/TOrgDataService$Processor.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountUpdateException$_Fields.class
 com/oyo/workforcemanagement/DateTimeUtil.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$doesNodeExist.class
 com/oyo/metadata/TMetaDataService$listCountries_args$listCountries_argsStandardSchemeFactory.class
 com/oyo/metadata/TLocalityResponse$TLocalityResponseStandardSchemeFactory.class
 com/oyo/metadata/TPickupPointCUDResponse$TPickupPointCUDResponseTupleSchemeFactory.class
@@ -2228,6 +2328,7 @@ com/oyo/metadata/TAiportCreateRequest$TAiportCreateRequestStandardScheme.class
 com/oyo/metadata/TMetaDataService$createAmenity_args$_Fields.class
 com/oyo/workforce/TToggleService$toggleOff_args.class
 com/oyo/metadata/TMetaDataService$getCancellationPolicy_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$createOrUpdateEntity.class
 com/oyo/workforce/TRosterService$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createHotelCategory$1.class
 com/oyo/mm/channel/accountmanagement/TAccountObject$1.class
@@ -2299,6 +2400,8 @@ com/oyo/metadata/TMetaDataService$listPackageTags_result$listPackageTags_resultT
 com/oyo/workforce/TGetEmployeesResponse$TGetEmployeesResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listPickupPoints_args$listPickupPoints_argsStandardSchemeFactory.class
 com/oyo/metadata/TPackageInclusionResponse$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args$removeEntity_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args$getImmediateParents_argsStandardScheme.class
 com/oyo/platform/orgdata/TOrgDataService$getParent_result$getParent_resultStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeNotOnboardedException$TEmployeeNotOnboardedExceptionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$createPaxRange.class
@@ -2348,6 +2451,7 @@ com/oyo/metadata/TMetaDataService$listPickupPoints_result$listPickupPoints_resul
 com/oyo/workforce/TRoasterAvailabilityResponse$1.class
 com/oyo/metadata/TMetaDataService$updateFoodCategory_result.class
 com/oyo/metadata/TMiceDestinationCUDResponse.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args$removeEntity_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressResponse.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetCities.class
 com/oyo/metadata/TMetaDataService$updateFoodType_result.class
@@ -2384,6 +2488,7 @@ com/oyo/metadata/TMetaDataService$batchGetPackageTags_args$batchGetPackageTags_a
 com/oyo/metadata/TCountry$TCountryStandardScheme.class
 com/oyo/metadata/TMetaDataService$getCatalogSection_args$_Fields.class
 com/oyo/metadata/TMetaDataService$createHotelCategory_result$createHotelCategory_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$removeRelation_call.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getMonth_call.class
 com/oyo/metadata/TAiportGetRequest$_Fields.class
 com/oyo/metadata/TMetaDataService$listPackageDurations_args$listPackageDurations_argsTupleScheme.class
@@ -2424,6 +2529,7 @@ com/oyo/metadata/TMetaDataService$AsyncClient$getHotelCategory_call.class
 com/oyo/metadata/TStateCUDResponse$_Fields.class
 com/oyo/metadata/TMetaDataService$createSightseeingPoint_result$createSightseeingPoint_resultTupleScheme.class
 com/oyo/platform/orgdata/TOrgDataService$Processor$associateEmployeeToOrg.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor.class
 com/oyo/metadata/TMetaDataService$listAmenities_args$_Fields.class
 com/oyo/platform/orgdata/TOrgDataService$getMicroMarket_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressResponse$TBillingAddressResponseStandardSchemeFactory.class
@@ -2442,6 +2548,8 @@ com/oyo/metadata/TMetaDataService$updatePackageTag_result$_Fields.class
 com/oyo/metadata/TMiceDestinationCUDResponse$TMiceDestinationCUDResponseTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TSizeExceededException$TSizeExceededExceptionStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listMonths_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$doesNodeExist.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args$createOrUpdateEntity_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getHotelCategory_result$getHotelCategory_resultTupleSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncClient.class
 com/oyo/metadata/TMetaDataService$updateMiceDestination_args$updateMiceDestination_argsTupleSchemeFactory.class
@@ -2602,6 +2710,7 @@ com/oyo/metadata/TCabCategoryDetails$1.class
 com/oyo/metadata/TCatalogSection.class
 com/oyo/metadata/TMetaDataService$createMiceTag_result.class
 com/oyo/metadata/TPaymentPolicy$TPaymentPolicyTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getDescendants.class
 com/oyo/workforce/TWorkLoadAddRequest$_Fields.class
 com/oyo/workforce/TEmployeeOnBoardingService$offboardEmployee_args$offboardEmployee_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getAmenity$1.class
@@ -2647,6 +2756,7 @@ com/oyo/metadata/TMetaDataService$batchGetMiceEvents_args$batchGetMiceEvents_arg
 com/oyo/metadata/TPackageDestination$TPackageDestinationTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$batchGetMonths_args$batchGetMonths_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateVenuePolicy_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args$getImmediateChildren_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateAmenity_result$updateAmenity_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createPickupPoint_args$createPickupPoint_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$getAirportDetails_args$getAirportDetails_argsStandardSchemeFactory.class
@@ -2661,6 +2771,7 @@ com/oyo/metadata/TMetaDataService$updateRoomCategory_result$updateRoomCategory_r
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateSightseeingPoint.class
 com/oyo/metadata/TMetaDataService$listMonths_args$listMonths_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateLocality$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args$addRelation_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listFoodCategories_result.class
 com/oyo/metadata/TMetaDataService$getVenuePolicy_args.class
 com/oyo/metadata/TMetaDataService$updatePaxRange_result$_Fields.class
@@ -2672,6 +2783,7 @@ com/oyo/mm/channel/accountmanagement/TAccountCreationException$_Fields.class
 com/oyo/metadata/TMetaDataService$listCancellationPolicies_args$listCancellationPolicies_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listCatalogSections_args$listCatalogSections_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listFoodCategories_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result$createOrUpdateEntity_resultTupleScheme.class
 com/oyo/workforce/TToggleGetRequest$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getPackageTag$1.class
 com/oyo/workforce/TEmployeeOnBoardingService$isEmployeeOnboarded_result$isEmployeeOnboarded_resultTupleScheme.class
@@ -2698,6 +2810,7 @@ com/oyo/metadata/TVenuePolicyCUDResponse$TVenuePolicyCUDResponseTupleSchemeFacto
 com/oyo/platform/orgdata/TOrgDataService$findMMById_result$findMMById_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPaxRanges_result.class
 com/oyo/metadata/TMetaDataService$getPropertyLevel_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Client$Factory.class
 com/oyo/workforce/TWorkLoadService$getLoad_result$getLoad_resultTupleScheme.class
 com/oyo/calendar/TCalendarService$AsyncClient$Factory.class
 com/oyo/workforce/TMongoDocDoesntExistException$TMongoDocDoesntExistExceptionTupleSchemeFactory.class
@@ -2715,6 +2828,7 @@ com/oyo/metadata/TMetaDataService$listPaxRanges_args.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncClient$getAccountHistory_call.class
 com/oyo/metadata/TMetaDataService$batchGetPackageInclusions_args$batchGetPackageInclusions_argsTupleScheme.class
 com/oyo/mm/channel/accountmanagement/TAccountAcceptedException.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getImmediateParents.class
 com/oyo/metadata/TCancellationPolicy$TCancellationPolicyStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TOnboardingDataException$TOnboardingDataExceptionTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMealPlans_result$listMealPlans_resultTupleSchemeFactory.class
@@ -2762,6 +2876,7 @@ com/oyo/workforce/TInternalErrorException$TInternalErrorExceptionTupleScheme.cla
 com/oyo/metadata/TMiceTag$1.class
 com/oyo/calendar/TRescheduleEventResponse$TRescheduleEventResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPaymentPolicies_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getSiblings.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args$isEmployeeAvailableInRange_argsTupleScheme.class
 com/oyo/metadata/TPackageDestinationResponse$TPackageDestinationResponseTupleScheme.class
 com/oyo/workforce/TToggleService$AsyncProcessor$toggleOff.class
@@ -2778,6 +2893,7 @@ com/oyo/metadata/TMetaDataService$updateCity_args$_Fields.class
 com/oyo/calendar/TRescheduleEventResponse.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$checkIsD2t_args$checkIsD2t_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createPackageDuration_result$createPackageDuration_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result$getAncestors_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getSpecificationWithName_result$getSpecificationWithName_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getCountry_args$getCountry_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$Processor$listCatalogSections.class
@@ -2802,11 +2918,13 @@ com/oyo/metadata/TMetaDataService$listPackageTags_args.class
 com/oyo/metadata/TMetaDataService$updateMiceDestination_result.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalRejected_result$financeApprovalRejected_resultStandardScheme.class
 com/oyo/metadata/TRestrictionResponse$TRestrictionResponseStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_result$_Fields.class
 com/oyo/metadata/TMetaDataService$updateState_result$_Fields.class
 com/oyo/metadata/TMiceDestinationResponse$TMiceDestinationResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createAmenity_call.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getPaxRange$1.class
 com/oyo/workforce/TRosterService$markUnavailable_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result$addRelation_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPackageInclusions_result.class
 com/oyo/metadata/TMetaDataService$createAmenity_result$createAmenity_resultStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AutoCompleteName_result.class
@@ -2823,7 +2941,9 @@ com/oyo/mm/channel/accountmanagement/TAddressObject$1.class
 com/oyo/workforce/TConfigNotFound$TConfigNotFoundStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateVenuePolicy.class
 com/oyo/metadata/TMetaDataService$listPackageDestinations_args$listPackageDestinations_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor.class
 com/oyo/metadata/TMetaDataService$batchGetMiceEvents_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args$getHierarchy_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$batchGetPackageInclusions_args$_Fields.class
 com/oyo/workforce/TRosterService$AsyncProcessor$markUnavailable.class
 com/oyo/metadata/TRestrictionResponse.class
@@ -2832,6 +2952,7 @@ com/oyo/metadata/TMetaDataService$listRoomCategories_args$listRoomCategories_arg
 com/oyo/mm/channel/accountmanagement/AccountManagement$searchAccounts_args.class
 com/oyo/metadata/TPropertyLevelCUDResponse.class
 com/oyo/metadata/TAiportCreateRequest$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args$getImmediateParents_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createPaymentPolicy_result$createPaymentPolicy_resultStandardSchemeFactory.class
 com/oyo/metadata/TMiceDestination$_Fields.class
 com/oyo/workforce/TToggleOnRequest.class
@@ -2867,6 +2988,7 @@ com/oyo/metadata/TLocalityCUDResponse$TLocalityCUDResponseStandardSchemeFactory.
 com/oyo/mm/channel/accountmanagement/TAlreadyDeletedException$1.class
 com/oyo/calendar/TScheduleEventRequest$TScheduleEventRequestTupleScheme.class
 com/oyo/metadata/TMetaDataService$listPropertyLevel_args$listPropertyLevel_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result.class
 com/oyo/metadata/TMetaDataService$batchGetVenuePolicies_result$batchGetVenuePolicies_resultTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TAccountSearchException$1.class
 com/oyo/metadata/TMetaDataService$updateCatalogSection_args$updateCatalogSection_argsStandardSchemeFactory.class
@@ -2876,6 +2998,7 @@ com/oyo/metadata/TMetaDataService$batchGetMonths_result$batchGetMonths_resultTup
 com/oyo/workforce/TRosterService$Processor$markUnavailable.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listAirports_call.class
 com/oyo/metadata/TMetaDataService$createPackageInclusion_result$createPackageInclusion_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args$doesNodeExist_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetMiceTags_result$batchGetMiceTags_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updatePackageInclusion_args$updatePackageInclusion_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$createPackageTag_args$createPackageTag_argsStandardScheme.class
@@ -2920,6 +3043,7 @@ com/oyo/workforce/TEmployeeOnBoardingService$getEmployeesBusinessId_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createPackageInclusion.class
 com/oyo/platform/orgdata/TOrgDataService$removeEmployeeFromOrg_args.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args.class
 com/oyo/workforce/TRosterService$markUnavailable_args$markUnavailable_argsTupleSchemeFactory.class
 com/oyo/workforce/TWorkForceConfigService$AsyncClient$updateConfig_call.class
 com/oyo/platform/orgdata/TOrgDataService$findMMById_result$findMMById_resultTupleSchemeFactory.class
@@ -2980,6 +3104,7 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$updateMiceEvent$1.class
 com/oyo/metadata/TPaymentPolicy$_Fields.class
 com/oyo/mm/channel/accountmanagement/TUpdateAccountRequest$TUpdateAccountRequestStandardSchemeFactory.class
 com/oyo/metadata/TItemNotFoundException$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args$_Fields.class
 com/oyo/workforce/TEmployeeOnBoardingService$getEmployeesBusinessId_result$getEmployeesBusinessId_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$listFoodTypes.class
 com/oyo/workforce/TInvalidEpochTimeException$TInvalidEpochTimeExceptionTupleScheme.class
@@ -3010,6 +3135,7 @@ com/oyo/metadata/TCabCategoryMetadataInfo$1.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listVenuePolicies_call.class
 com/oyo/platform/orgdata/TMicroMarketDetails$TMicroMarketDetailsStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$onboardEmployee_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args$addRelation_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressUpdateException$TBillingAddressUpdateExceptionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listMiceDestinations_call.class
 com/oyo/metadata/TMetaDataService$getCity_result$_Fields.class
@@ -3028,6 +3154,7 @@ com/oyo/metadata/TMetaDataService$listVenuePolicies_result$listVenuePolicies_res
 com/oyo/workforce/TWorkForceConfigService$updateConfig_result$updateConfig_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$updateMiceTag_call.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_result$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$registerHierarchy_call.class
 com/oyo/metadata/TMetaDataService$updateFoodType_result$updateFoodType_resultTupleSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncClient$findMMByName_call.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createFoodType$1.class
@@ -3048,6 +3175,7 @@ com/oyo/mm/channel/accountmanagement/BillingAddressManagement$updateBillingAddre
 com/oyo/metadata/TMetaDataService$AsyncClient$listCountries_call.class
 com/oyo/metadata/TMetaDataService$listSpecifications_args$listSpecifications_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePackageTag_result$updatePackageTag_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$addRelation_call.class
 com/oyo/metadata/TMetaDataService$createPaymentPolicy_args$createPaymentPolicy_argsStandardSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$removeEmployeeFromOrg_result$removeEmployeeFromOrg_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createAmenity_args$createAmenity_argsTupleSchemeFactory.class
@@ -3057,6 +3185,7 @@ com/oyo/metadata/TAiportCUDResponse$TAiportCUDResponseStandardSchemeFactory.clas
 com/oyo/metadata/TMetaDataService$listSightseeingPoints_result.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listMiceTags_call.class
 com/oyo/metadata/TMiceDestination$TMiceDestinationStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$removeRelation.class
 com/oyo/metadata/TMetaDataService$createPackageDuration_result$_Fields.class
 com/oyo/metadata/TPropertyLevelCUDResponse$TPropertyLevelCUDResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$listStates.class
@@ -3066,6 +3195,7 @@ com/oyo/metadata/TMetaDataService$Processor$createVenuePolicy.class
 com/oyo/metadata/TMetaDataService$updateMiceTag_args$updateMiceTag_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createMealPlan_args$createMealPlan_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$listMiceEvents.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getDescendants_call.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncClient$checkIsD2t_call.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_args$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getFoodType.class
@@ -3077,8 +3207,10 @@ com/oyo/workforce/TWorkForceConfigService$AsyncProcessor$deactivateConfig.class
 com/oyo/mm/channel/accountmanagement/TJsonParseException$TJsonParseExceptionStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncClient$updateCity_call.class
 com/oyo/metadata/TMetaDataService$createPackageCategory_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args.class
 com/oyo/metadata/TMetaDataService$createCabCategory_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TCreateAccountRequest.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Iface.class
 com/oyo/metadata/TCatalogSection$TCatalogSectionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getCity.class
 com/oyo/workforce/TWorkForceConfigService$deactivateConfig_args$deactivateConfig_argsStandardSchemeFactory.class
@@ -3096,10 +3228,12 @@ com/oyo/metadata/TMetaDataService$listCancellationPolicies_args$listCancellation
 com/oyo/metadata/TMetaDataService$createPackageCategory_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateCity.class
 com/oyo/metadata/TMetaDataService$createCatalogSection_result$createCatalogSection_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args$getDescendants_argsTupleScheme.class
 com/oyo/metadata/TLocalityCUDResponse$TLocalityCUDResponseTupleScheme.class
 com/oyo/metadata/TMetaDataService$Processor$createPackageInclusion.class
 com/oyo/metadata/TMetaDataService$listCancellationPolicies_result$listCancellationPolicies_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getFoodCategory_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountDataValidationException$TAccountDataValidationExceptionTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createPackageCategory_args$_Fields.class
 com/oyo/metadata/TMetaDataService$updateMiceTag_args$updateMiceTag_argsTupleScheme.class
@@ -3134,6 +3268,7 @@ com/oyo/metadata/TMetaDataService$createPackageInclusion_args$createPackageInclu
 com/oyo/metadata/TLocalityCUDResponse$TLocalityCUDResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getSpecificationWithName_args$_Fields.class
 com/oyo/metadata/TAiportGETResponse$TAiportGETResponseStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getImmediateParents_call.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncClient$Factory.class
 com/oyo/metadata/TMetaDataService$updateCancellationPolicy_args$updateCancellationPolicy_argsTupleScheme.class
 com/oyo/mm/channel/accountmanagement/TSizeExceededException$TSizeExceededExceptionTupleSchemeFactory.class
@@ -3159,8 +3294,10 @@ com/oyo/calendar/TCheckAvailabilityResponse$1.class
 com/oyo/metadata/TMetaDataService$getCountry_result$getCountry_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetCities_result$batchGetCities_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$getPackageTag_args$getPackageTag_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result$getSiblings_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getState_result.class
 com/oyo/workforce/TWorkForceService$Iface.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args.class
 com/oyo/metadata/TStateResponse$1.class
 com/oyo/metadata/TMetaDataService$createPackageDestination_args$_Fields.class
 com/oyo/metadata/TMetaDataService$batchGetAmenities_args.class
@@ -3182,6 +3319,7 @@ com/oyo/calendar/TCalendarService$deleteEvent_result$deleteEvent_resultStandardS
 com/oyo/metadata/TMetaDataService$updateCountry_result$updateCountry_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetSpecifications_args$batchGetSpecifications_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listCountries_result$listCountries_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$Factory.class
 com/oyo/metadata/TMetaDataService$updatePickupPoint_args$updatePickupPoint_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/TOnboardingDataException$1.class
 com/oyo/metadata/TPackageInclusion$1.class
@@ -3225,6 +3363,7 @@ com/oyo/metadata/TMetaDataService$updatePackageTag_result$updatePackageTag_resul
 com/oyo/metadata/TMetaDataService$createPickupPoint_result$_Fields.class
 com/oyo/metadata/TQueryPackageDestinations.class
 com/oyo/metadata/TPaxRange$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$removeEntity$1.class
 com/oyo/metadata/TMetaDataService$Processor$listCancellationPolicies.class
 com/oyo/metadata/TMetaDataService$updateFoodType_result$updateFoodType_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createMiceDestination_result$createMiceDestination_resultStandardSchemeFactory.class
@@ -3243,15 +3382,18 @@ com/oyo/workforce/TToggleService$AsyncIface.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateMiceTag$1.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressUpdateException$_Fields.class
 com/oyo/metadata/TMealPlanCreateRequest$TMealPlanCreateRequestStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args$getImmediateParents_argsTupleScheme.class
 com/oyo/workforce/TEmployeeOnBoardingService$onboardEmployee_result$onboardEmployee_resultStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$Iface.class
 com/oyo/metadata/TMetaDataService$getAirportDetails_result$getAirportDetails_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updatePackageCategory_args$_Fields.class
 com/oyo/metadata/TMetaDataService$createPackageDuration_args$createPackageDuration_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$createFoodCategory_args$createFoodCategory_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$registerHierarchy.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_result$updateCabCategory_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateCatalogSection_args$updateCatalogSection_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$updateCountry.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result$registerHierarchy_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateMealPlan_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateCatalogSection.class
 com/oyo/metadata/TAmenityResponse$TAmenityResponseTupleScheme.class
@@ -3259,6 +3401,7 @@ com/oyo/workforce/TRoasterMarkAvailableRequest$TRoasterMarkAvailableRequestStand
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listPackageInclusions.class
 com/oyo/workforce/TRosterService$AsyncClient$isAvailable_call.class
 com/oyo/metadata/THotelCategoryCUDResponse$THotelCategoryCUDResponseStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args.class
 com/oyo/platform/orgdata/TOrgDataService$Processor$findMMByName.class
 com/oyo/mm/channel/accountmanagement/TGetBillingAddressesResponse$TGetBillingAddressesResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$batchGetMiceTags_call.class
@@ -3329,6 +3472,7 @@ com/oyo/mm/channel/accountmanagement/AccountManagement$searchAccounts_args$searc
 com/oyo/mm/channel/accountmanagement/TJsonParseException$TJsonParseExceptionStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_result$isEmployeeAvailableInRange_resultTupleScheme.class
 com/oyo/metadata/TMiceEventCUDResponse.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AutoCompleteName_args$_Fields.class
 com/oyo/calendar/TCalendarService$Processor$rescheduleEvent.class
 com/oyo/metadata/TStateCUDResponse$1.class
@@ -3342,6 +3486,7 @@ com/oyo/metadata/TMiceTagResponse$1.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getAirportDetails_call.class
 com/oyo/metadata/TPackageTagResponse$_Fields.class
 com/oyo/metadata/THotelCategoryResponse$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result$_Fields.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncProcessor$getParent.class
 com/oyo/workforce/TInvalidUserProfileIdException$TInvalidUserProfileIdExceptionTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getMiceEvent_args$getMiceEvent_argsTupleSchemeFactory.class
@@ -3422,6 +3567,7 @@ com/oyo/metadata/TMiceTagCUDResponse$TMiceTagCUDResponseStandardSchemeFactory.cl
 com/oyo/mm/channel/accountmanagement/AccountManagement$updateAccount_result$_Fields.class
 com/oyo/mm/channel/accountmanagement/TEntityType.class
 com/oyo/metadata/TAiportUpdateRequest$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_result$getImmediateParents_resultStandardScheme.class
 com/oyo/metadata/TMiceDestinationCUDResponse$TMiceDestinationCUDResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCity_args$createCity_argsStandardScheme.class
 com/oyo/workforce/TToggleService$AsyncClient$isToggleOn_call.class
@@ -3441,16 +3587,20 @@ com/oyo/metadata/TMetaDataService$listVenuePolicies_args$listVenuePolicies_argsS
 com/oyo/metadata/TMetaDataService$createPackageDestination_args.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$getBillingAddressesOfAccount_result$getBillingAddressesOfAccount_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listStates_result$listStates_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result$removeRelation_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$batchGetPackageInclusions$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result$createOrUpdateEntity_resultStandardSchemeFactory.class
 com/oyo/workforce/TConfigDeactivated$TConfigDeactivatedTupleSchemeFactory.class
 com/oyo/metadata/TState.class
 com/oyo/workforce/TWorkForceConfigService$AsyncProcessor$createConfig.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args$_Fields.class
 com/oyo/calendar/TCalendarService$1.class
 com/oyo/metadata/TMiceEventResponse$TMiceEventResponseTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$searchAccounts_result$searchAccounts_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncClient$listFoodCategories_call.class
 com/oyo/metadata/TMetaDataService$getPackageCategory_args$_Fields.class
 com/oyo/platform/orgdata/TMicroMarketDetails$TMicroMarketDetailsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args.class
 com/oyo/metadata/TCabCategoryDetails$TCabCategoryDetailsStandardScheme.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableInRange_args.class
 com/oyo/workforce/TGetEmployeesRequest.class
@@ -3488,6 +3638,7 @@ com/oyo/metadata/TMetaDataService$createRestriction_args$createRestriction_argsS
 com/oyo/metadata/TMetaDataService$updateMiceEvent_args$updateMiceEvent_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalGranted_args$financeApprovalGranted_argsStandardSchemeFactory.class
 com/oyo/workforce/TToggleGetRequest$TToggleGetRequestStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getDescendants$1.class
 com/oyo/metadata/TMonthResponse$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createMiceDestination$1.class
 com/oyo/metadata/TRestrictionCUDResponse.class
@@ -3537,11 +3688,13 @@ com/oyo/metadata/TMetaDataService$updateVenuePolicy_result$_Fields.class
 com/oyo/workforce/TWorkLoadAddRequest$TWorkLoadAddRequestTupleScheme.class
 com/oyo/metadata/TPackageTagResponse$TPackageTagResponseTupleScheme.class
 com/oyo/metadata/TMetaDataService$createCancellationPolicy_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getAncestors$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getFoodCategory.class
 com/oyo/metadata/TMetaDataService$listPackageDurations_result$listPackageDurations_resultStandardSchemeFactory.class
 com/oyo/calendar/TRescheduleEventResponse$TRescheduleEventResponseTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeOnBoardingService$AsyncClient$getEmployeesBusinessId_call.class
 com/oyo/metadata/TMetaDataService$Processor$getMonth.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args$registerHierarchy_argsTupleSchemeFactory.class
 com/oyo/workforce/TEmployeeBusinessUpdateRequest$TEmployeeBusinessUpdateRequestTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createHotelCategory_args.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor.class
@@ -3564,8 +3717,10 @@ com/oyo/metadata/TMetaDataService$Processor$batchGetAmenities.class
 com/oyo/workforce/TToggleService$AsyncProcessor$isToggleOn$1.class
 com/oyo/metadata/TMetaDataService$getPackageTag_args$getPackageTag_argsTupleSchemeFactory.class
 com/oyo/metadata/TSpecificationGETResponse$TSpecificationGETResponseTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result$getHierarchy_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listLocalities$1.class
 com/oyo/metadata/TMetaDataService$listPropertyLevel_result$listPropertyLevel_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getSiblings$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getVenuePolicy.class
 com/oyo/platform/orgdata/TOrgDataService$getMicroMarket_args.class
 com/oyo/workforce/TWorkLoadService$getLoad_result$_Fields.class
@@ -3609,6 +3764,8 @@ com/oyo/calendar/TCalendarService$scheduleEvent_args$scheduleEvent_argsStandardS
 com/oyo/workforce/TWorkForceService$getEmployees_args$getEmployees_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCity_result.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createPackageDuration.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result$getDescendants_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_args$getHierarchy_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$createMealPlan_result$_Fields.class
 com/oyo/metadata/TMetaDataService$updateCabCategory_result$updateCabCategory_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateAirportDetails_result$_Fields.class
@@ -3620,6 +3777,7 @@ com/oyo/metadata/TFoodCategoryCUDResponse$1.class
 com/oyo/platform/orgdata/TOrgDataService$associateEmployeeToOrg_result$associateEmployeeToOrg_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateSpecification_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$updateAccount$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$removeRelation.class
 com/oyo/metadata/TMetaDataService$updateCity_result$_Fields.class
 com/oyo/workforce/TToggleGetResponse$TToggleGetResponseTupleScheme.class
 com/oyo/workforce/TEmployeeBusinessUpdateRequest$1.class
@@ -3641,6 +3799,8 @@ com/oyo/metadata/TCancellationPolicy$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createFoodType.class
 com/oyo/metadata/TMiceTagResponse$TMiceTagResponseStandardScheme.class
 com/oyo/workforce/TRoasterMarkAvailableRequest$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args$getDescendants_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getSiblings.class
 com/oyo/metadata/TMetaDataService$listLocalities_result$listLocalities_resultStandardSchemeFactory.class
 com/oyo/metadata/TAiportGETResponse$1.class
 com/oyo/metadata/TMetaDataService$listPackageDurations_result.class
@@ -3666,9 +3826,12 @@ com/oyo/metadata/TMetaDataService$listStates_args$listStates_argsTupleScheme.cla
 com/oyo/workforce/TToggleService$AsyncClient$Factory.class
 com/oyo/mm/channel/accountmanagement/TSearchAccountRequest$TSearchAccountRequestStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$updatePaymentPolicy.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getImmediateChildren.class
 com/oyo/metadata/TMetaDataService$updateSightseeingPoint_result$updateSightseeingPoint_resultStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args$getDescendants_argsStandardScheme.class
 com/oyo/metadata/THotelCategoryCUDResponse.class
 com/oyo/metadata/TMetaDataService$listCancellationPolicies_result$listCancellationPolicies_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result$registerHierarchy_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createFoodType_args$createFoodType_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$batchGetFoodCategories_call.class
 com/oyo/workforce/TWorkForceService$AsyncProcessor.class
@@ -3716,6 +3879,7 @@ com/oyo/mm/channel/accountmanagement/TBillingAddressObject$TBillingAddressObject
 com/oyo/metadata/TMetaDataService$createRestriction_args$createRestriction_argsStandardScheme.class
 com/oyo/metadata/TDropPoint.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listAmenities$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_args$_Fields.class
 com/oyo/metadata/TMetaDataService$Processor$listHotelCategories.class
 com/oyo/metadata/TSpecificationGETRequest$TSpecificationGETRequestStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$createAccount_result$createAccount_resultStandardScheme.class
@@ -3741,10 +3905,12 @@ com/oyo/metadata/TPackageInclusionCUDResponse.class
 com/oyo/metadata/TPackageDestination$TPackageDestinationTupleScheme.class
 com/oyo/metadata/TLocalityCUDResponse$TLocalityCUDResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$getSpecification_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_args$createOrUpdateEntity_argsStandardScheme.class
 com/oyo/workforce/TUserProfileIdsWithWorkLoads.class
 com/oyo/metadata/TMetaDataService$createRestriction_args.class
 com/oyo/metadata/TPaxRangeCUDResponse.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createCancellationPolicy_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateParents_args$getImmediateParents_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCountry_args$createCountry_argsStandardSchemeFactory.class
 com/oyo/workforce/TEmployeeOffboardRequest$TEmployeeOffboardRequestTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateCountry_args.class
@@ -3764,10 +3930,12 @@ com/oyo/metadata/TMiceEvent.class
 com/oyo/metadata/TMetaDataService$getState_args.class
 com/oyo/metadata/TMetaDataService$createHotelCategory_args$createHotelCategory_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMiceDestinations_args$listMiceDestinations_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_result$registerHierarchy_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createRoomCategory_result.class
 com/oyo/metadata/TMetaDataService$updateCatalogSection_result$_Fields.class
 com/oyo/metadata/TMetaDataService$Processor$updateAirportDetails.class
 com/oyo/workforce/TEmployeeAlreadyOnboardedException$TEmployeeAlreadyOnboardedExceptionStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args$_Fields.class
 com/oyo/workforce/TConfigNotFound$1.class
 com/oyo/platform/orgdata/TOrgDataService$removeEmployeeFromOrg_args$removeEmployeeFromOrg_argsTupleScheme.class
 com/oyo/metadata/TMiceDestinationResponse.class
@@ -3790,13 +3958,18 @@ com/oyo/metadata/TMetaDataService$AsyncClient$updateCatalogSection_call.class
 com/oyo/metadata/THotelCategory$THotelCategoryStandardScheme.class
 com/oyo/metadata/TMetaDataService$listMiceDestinations_result$_Fields.class
 com/oyo/metadata/TAmenity$TAmenityTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getDescendants_result$_Fields.class
 com/oyo/workforce/TWorkLoad$TWorkLoadTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args$_Fields.class
 com/oyo/metadata/TMetaDataService$updatePackageDestination_result$updatePackageDestination_resultTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/TGetBillingAddressesResponse$_Fields.class
 com/oyo/metadata/TCatalogSection$TCatalogSectionStandardScheme.class
 com/oyo/metadata/TMetaDataService$getSightSeeingPoint_result.class
 com/oyo/metadata/TMetaDataService$AsyncClient$batchGetAmenities_call.class
 com/oyo/metadata/TMetaDataService$getSpecification_args$getSpecification_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$createOrUpdateEntity_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args$removeRelation_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result.class
 com/oyo/platform/orgdata/TOrgDataService$getMMOrgInfo_result$getMMOrgInfo_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$getSightSeeingPoint_args$getSightSeeingPoint_argsStandardScheme.class
 com/oyo/calendar/TCalendarService$rescheduleEvent_args$rescheduleEvent_argsTupleSchemeFactory.class
@@ -3814,6 +3987,7 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$listPackageDurations$1.class
 com/oyo/calendar/TCalendarService$scheduleEvent_result.class
 com/oyo/metadata/TCancellationPolicy$TCancellationPolicyStandardSchemeFactory.class
 com/oyo/workforce/TWorkLoadAddRequest$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result$removeRelation_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$listFoodTypes_result$listFoodTypes_resultTupleSchemeFactory.class
 com/oyo/calendar/TScheduleEventResponse$_Fields.class
 com/oyo/workforce/TWorkLoadService$addLoad_result$addLoad_resultStandardScheme.class
@@ -3850,6 +4024,7 @@ com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsCode_arg
 com/oyo/metadata/TMetaDataService$AsyncClient$listCabCategories_call.class
 com/oyo/metadata/TPickupPointResponse$TPickupPointResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listCabCategories_args$listCabCategories_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result$addRelation_resultTupleSchemeFactory.class
 com/oyo/workforce/TWorkLoadAddRequest$TWorkLoadAddRequestStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getMiceDestination_args$getMiceDestination_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listCabCategories_args$listCabCategories_argsStandardSchemeFactory.class
@@ -3880,6 +4055,7 @@ com/oyo/metadata/TMetaDataService$updateRoomCategory_args.class
 com/oyo/metadata/TVenuePolicyResponse$TVenuePolicyResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$listLocalities_args$listLocalities_argsStandardSchemeFactory.class
 com/oyo/metadata/TPropertyLevel.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result$removeRelation_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createRestriction_result$createRestriction_resultTupleScheme.class
 com/oyo/platform/orgdata/TMicroMarket$TMicroMarketStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateAmenity_result$_Fields.class
@@ -3914,6 +4090,7 @@ com/oyo/metadata/TMetaDataService$createPackageCategory_args$createPackageCatego
 com/oyo/calendar/TRescheduleEventResponse$TRescheduleEventResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getCity_args$_Fields.class
 com/oyo/workforce/TEmployeeOnBoardingService$AsyncClient$onboardEmployee_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$getAncestors.class
 com/oyo/mm/channel/accountmanagement/TAlreadyDeletedException$TAlreadyDeletedExceptionStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$createAirport.class
 com/oyo/platform/orgdata/TOrgDataService$findMMByName_args.class
@@ -3951,6 +4128,7 @@ com/oyo/metadata/TMetaDataService$Processor$createMiceEvent.class
 com/oyo/metadata/TMetaDataService$getMiceDestination_args$_Fields.class
 com/oyo/metadata/TMetaDataService$listMiceTags_args$_Fields.class
 com/oyo/metadata/TMetaDataService$createRestriction_args$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args.class
 com/oyo/metadata/TDeleteMetadataResponse$1.class
 com/oyo/metadata/TRoomCategory$TRoomCategoryTupleScheme.class
 com/oyo/mm/channel/accountmanagement/BillingAddressManagement$addBillingAddressesToAccount_args$addBillingAddressesToAccount_argsStandardSchemeFactory.class
@@ -3958,6 +4136,7 @@ com/oyo/metadata/TCityResponse$TCityResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$getCancellationPolicy_args$getCancellationPolicy_argsTupleScheme.class
 com/oyo/metadata/TSightseeingPoint$TSightseeingPointStandardScheme.class
 com/oyo/metadata/TMetaDataService$getRestriction_result$getRestriction_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args$_Fields.class
 com/oyo/workforce/TActDeactRequestData$1.class
 com/oyo/metadata/TMetaDataService$getRoomCategory_args$getRoomCategory_argsTupleScheme.class
 com/oyo/metadata/TCancellationPolicyResponse$TCancellationPolicyResponseStandardSchemeFactory.class
@@ -3971,6 +4150,7 @@ com/oyo/metadata/TMetaDataService$listLocalities_args$listLocalities_argsTupleSc
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsCode_result$getAccountFromCrsCode_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createMiceDestination_result$_Fields.class
 com/oyo/metadata/TMetaDataService$updateMiceDestination_result$updateMiceDestination_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeEntity_args$removeEntity_argsTupleScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalRejected_result$financeApprovalRejected_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listPackageCategories.class
 com/oyo/metadata/TCabCategoryCUDResponse$1.class
@@ -3979,6 +4159,7 @@ com/oyo/platform/orgdata/TOrgDataService$associateEmployeeToOrg_args$associateEm
 com/oyo/workforce/TInvalidBusinessIdException$_Fields.class
 com/oyo/metadata/TAiportGETResponse$TAiportGETResponseTupleScheme.class
 com/oyo/metadata/THotelCategoryResponse$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_result$getAncestors_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createCity_result$createCity_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetMiceEvents_args.class
 com/oyo/platform/orgdata/TOrgDataService$getMMOrgInfo_result$_Fields.class
@@ -4002,11 +4183,13 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$getSightSeeingPoint$1.class
 com/oyo/metadata/TMetaDataService$updateCity_result$updateCity_resultStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$getAccountFromCrsId_result$_Fields.class
 com/oyo/workforce/TWorkLoadService$AsyncClient.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_args.class
 com/oyo/workforce/TToggleService$toggleOff_args$toggleOff_argsTupleScheme.class
 com/oyo/metadata/TFoodType$TFoodTypeStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createVenuePolicy_args$_Fields.class
 com/oyo/platform/orgdata/TOrgDataService$removeEmployeeFromOrg_result$removeEmployeeFromOrg_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$Processor$listLocalities.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_args$removeRelation_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createCabCategory_args$createCabCategory_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$batchGetCities_args$batchGetCities_argsTupleSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AsyncProcessor$financeApprovalGranted$1.class
@@ -4023,6 +4206,7 @@ com/oyo/metadata/TCountryCUDResponse$TCountryCUDResponseStandardScheme.class
 com/oyo/calendar/TDeleteEventResponse$TDeleteEventResponseStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$batchGetPackageTags_args.class
 com/oyo/metadata/TMetaDataService$listMiceDestinations_result$listMiceDestinations_resultTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface.class
 com/oyo/mm/channel/accountmanagement/TAccountRejectedException$TAccountRejectedExceptionStandardSchemeFactory.class
 com/oyo/mm/channel/accountmanagement/Category.class
 com/oyo/metadata/TPackageDurationResponse$TPackageDurationResponseTupleSchemeFactory.class
@@ -4045,10 +4229,12 @@ com/oyo/workforce/TEmployeeOnBoardingService$AsyncProcessor$isEmployeeOnboarded.
 com/oyo/metadata/TMetaDataService$AsyncClient$updateLocality_call.class
 com/oyo/metadata/TMetaDataService$updatePackageDuration_args$updatePackageDuration_argsStandardSchemeFactory.class
 com/oyo/workforce/TUserProfileIdsWithWorkLoads$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_args$addRelation_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listAmenities_args$listAmenities_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getCatalogSection_args$getCatalogSection_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listAmenities_args$listAmenities_argsStandardScheme.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncClient$getOrgId_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$removeEntity.class
 com/oyo/metadata/TMetaDataService$createSightseeingPoint_result$_Fields.class
 com/oyo/workforce/TInvalidBusinessIdException$TInvalidBusinessIdExceptionStandardScheme.class
 com/oyo/calendar/TDeleteEventResponse$TDeleteEventResponseTupleScheme.class
@@ -4078,6 +4264,7 @@ com/oyo/mm/channel/accountmanagement/AccountManagement$updateAccount_args$update
 com/oyo/workforce/TWorkLoadGetRequest$TWorkLoadGetRequestTupleScheme.class
 com/oyo/workforce/TInvalidWorkLoadValueException$TInvalidWorkLoadValueExceptionTupleScheme.class
 com/oyo/metadata/TMetaDataService$getMonth_result$getMonth_resultStandardScheme.class
+com/oyo/platform/hierarchy/ThriftException$_Fields.class
 com/oyo/metadata/TAiportCUDResponse$TAiportCUDResponseTupleScheme.class
 com/oyo/workforce/TRosterService$markUnavailable_args$markUnavailable_argsTupleScheme.class
 com/oyo/workforce/TActDeactRequestData$TActDeactRequestDataStandardScheme.class
@@ -4089,6 +4276,7 @@ com/oyo/platform/orgdata/TOrgDataService$AsyncProcessor$findMMById$1.class
 com/oyo/mm/channel/accountmanagement/TJsonParseException$TJsonParseExceptionTupleSchemeFactory.class
 com/oyo/workforce/TInvalidBusinessIdException$TInvalidBusinessIdExceptionStandardSchemeFactory.class
 com/oyo/metadata/TRoomCategoryResponse$_Fields.class
+com/oyo/platform/hierarchy/ThriftException$ThriftExceptionTupleScheme.class
 com/oyo/metadata/TMetaDataService$getMiceEvent_result$getMiceEvent_resultStandardSchemeFactory.class
 com/oyo/metadata/TPackageInclusionCUDResponse$TPackageInclusionCUDResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$createMealPlan_args$createMealPlan_argsStandardScheme.class
@@ -4128,6 +4316,7 @@ com/oyo/metadata/TMonth$_Fields.class
 com/oyo/metadata/TStateCUDResponse$TStateCUDResponseTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getAirportDetails_result$_Fields.class
 com/oyo/metadata/TMetaDataService$createPickupPoint_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$createOrUpdateEntity_result$_Fields.class
 com/oyo/metadata/TMiceEvent$TMiceEventStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$searchAccounts_args$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updateMiceDestination$1.class
@@ -4172,11 +4361,14 @@ com/oyo/metadata/TMetaDataService$updateMealPlan_result$updateMealPlan_resultTup
 com/oyo/metadata/TMetaDataService$getCabCategory_args.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$checkIsD2t_result$checkIsD2t_resultStandardScheme.class
 com/oyo/metadata/TMetaDataService$createSightseeingPoint_args$createSightseeingPoint_argsStandardScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncIface.class
 com/oyo/workforce/TRoasterMarkAvailableRequest$TRoasterMarkAvailableRequestTupleScheme.class
 com/oyo/metadata/TAmenity$TAmenityStandardScheme.class
 com/oyo/metadata/TMetaDataService$getPackageInclusion_result$getPackageInclusion_resultStandardSchemeFactory.class
 com/oyo/metadata/TRestrictionCUDResponse$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_args$doesNodeExist_argsStandardScheme.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalRejected_args$financeApprovalRejected_argsTupleScheme.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$createOrUpdateEntity.class
 com/oyo/workforce/TWorkForceConfigService$createConfig_args$createConfig_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$getCancellationPolicy_result$getCancellationPolicy_resultTupleSchemeFactory.class
 com/oyo/workforce/TRoasterMarkUnAvailableRequest$1.class
@@ -4186,6 +4378,7 @@ com/oyo/metadata/TSpecificationUpdateRequest.class
 com/oyo/metadata/TMetaDataService$listRoomCategories_result$listRoomCategories_resultTupleSchemeFactory.class
 com/oyo/metadata/TPaxRangeCUDResponse$1.class
 com/oyo/metadata/TPropertyLevelCUDResponse$_Fields.class
+com/oyo/platform/hierarchy/ThriftException$ThriftExceptionTupleSchemeFactory.class
 com/oyo/calendar/TCalendarService.class
 com/oyo/metadata/TMetaDataService$getSpecification_args$getSpecification_argsTupleScheme.class
 com/oyo/workforce/TDataAlreadyExist$TDataAlreadyExistStandardSchemeFactory.class
@@ -4221,12 +4414,14 @@ com/oyo/metadata/TFoodCategoryCUDResponse$TFoodCategoryCUDResponseTupleSchemeFac
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getCity$1.class
 com/oyo/mm/channel/accountmanagement/TAddressObject$TAddressObjectTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getAirportDetails_args$getAirportDetails_argsTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$removeRelation_result$removeRelation_resultTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$listMealPlans_args$listMealPlans_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateMealPlan_result$updateMealPlan_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$listCountries_args$_Fields.class
 com/oyo/workforce/TWorkLoadService$addLoad_result.class
 com/oyo/metadata/TBadRequestException$TBadRequestExceptionStandardScheme.class
 com/oyo/workforce/TEmployeeOnboardRequest$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result$doesNodeExist_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateMonth_args$updateMonth_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$createCancellationPolicy_args$createCancellationPolicy_argsStandardSchemeFactory.class
 com/oyo/platform/orgdata/TOrgDataService$getUsers_result.class
@@ -4251,6 +4446,7 @@ com/oyo/workforce/TEmployeeOnBoardingService$AsyncProcessor$onboardEmployee$1.cl
 com/oyo/metadata/TMetaDataService$listRoomCategories_result.class
 com/oyo/metadata/TMetaDataService$createCatalogSection_args$createCatalogSection_argsTupleSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getAmenity_result$getAmenity_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$1.class
 com/oyo/metadata/TMetaDataService$updateMiceDestination_result$updateMiceDestination_resultTupleScheme.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncProcessor$removeEmployeeFromOrg$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listAirports$1.class
@@ -4271,6 +4467,7 @@ com/oyo/metadata/TAiportCUDResponse$1.class
 com/oyo/workforce/TToggleOffRequest$TToggleOffRequestTupleScheme.class
 com/oyo/metadata/TMetaDataService$updateLocality_args$updateLocality_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$updateState_result$updateState_resultStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$doesNodeExist_result$doesNodeExist_resultStandardScheme.class
 com/oyo/metadata/TRestriction$TRestrictionStandardScheme.class
 com/oyo/metadata/TMetaDataService$listPaymentPolicies_args$listPaymentPolicies_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updateHotelCategory_result$updateHotelCategory_resultStandardScheme.class
@@ -4278,6 +4475,7 @@ com/oyo/mm/channel/accountmanagement/TBillingAddressResponseDeleteException$_Fie
 com/oyo/mm/channel/accountmanagement/AccountManagement$updateAccount_args$updateAccount_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$batchGetMiceEvents_args$batchGetMiceEvents_argsStandardScheme.class
 com/oyo/metadata/TPackageDurationResponse$_Fields.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_args$_Fields.class
 com/oyo/metadata/TMetaDataService$listStates_args$listStates_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createPackageDuration_call.class
 com/oyo/metadata/TMetaDataService$Processor$getPackageDuration.class
@@ -4286,9 +4484,12 @@ com/oyo/workforce/TEmployeeOnBoardingService$Processor$isEmployeeOnboarded.class
 com/oyo/metadata/TMetaDataService$updateHotelCategory_result$updateHotelCategory_resultTupleScheme.class
 com/oyo/metadata/TCityCUDResponse.class
 com/oyo/metadata/TMetaDataService$AsyncClient$getRoomCategory_call.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getAncestors.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getAncestors_args$getAncestors_argsStandardScheme.class
 com/oyo/platform/orgdata/TOrgDataService$findMMById_result$_Fields.class
 com/oyo/workforce/TEmployeeAlreadyOnboardedException$_Fields.class
 com/oyo/mm/channel/accountmanagement/TAccountDataValidationException.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient.class
 com/oyo/metadata/TMetaDataService$getPackageInclusion_args$_Fields.class
 com/oyo/metadata/TPackageDestination$TPackageDestinationStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$getLocality_result$getLocality_resultStandardScheme.class
@@ -4310,6 +4511,7 @@ com/oyo/metadata/TMetaDataService$AsyncProcessor$listPackageTags$1.class
 com/oyo/metadata/TMetaDataService$Processor$listSpecifications.class
 com/oyo/workforce/TEmployeeGetBusinessIdResponse$1.class
 com/oyo/metadata/TMetaDataService$updateAirportDetails_args.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$addRelation_result$addRelation_resultStandardSchemeFactory.class
 com/oyo/workforce/TWorkForceService$AsyncClient$getEmployees_call.class
 com/oyo/metadata/TMetaDataService$Processor$getPackageDestination.class
 com/oyo/metadata/TMetaDataService$listPaxRanges_args$listPaxRanges_argsStandardSchemeFactory.class
@@ -4337,6 +4539,7 @@ com/oyo/metadata/TMealPlanCreateRequest$TMealPlanCreateRequestStandardSchemeFact
 com/oyo/metadata/TMetaDataService$listFoodTypes_args$listFoodTypes_argsStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$updatePackageTag$1.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$getMiceEvent.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncProcessor$getImmediateParents$1.class
 com/oyo/workforce/TToggleGetResponse$TToggleGetResponseStandardScheme.class
 com/oyo/metadata/TMetaDataService$Processor$createCity.class
 com/oyo/calendar/TCalendarService$checkAvailability_result$checkAvailability_resultTupleScheme.class
@@ -4350,6 +4553,7 @@ com/oyo/workforce/TMongoDocDoesntExistException$TMongoDocDoesntExistExceptionTup
 com/oyo/metadata/TMetaDataService$updateMiceDestination_args$updateMiceDestination_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$listMiceEvents_args$listMiceEvents_argsTupleScheme.class
 com/oyo/metadata/TCityResponse$TCityResponseStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$Processor$removeEntity.class
 com/oyo/metadata/TMetaDataService$listAirports_args$listAirports_argsTupleScheme.class
 com/oyo/metadata/TMetaDataService$createHotelCategory_result.class
 com/oyo/platform/orgdata/TOrgDataService$AsyncClient$getParent_call.class
@@ -4357,6 +4561,7 @@ com/oyo/workforce/TInvalidDateException$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncClient$createMealPlan_call.class
 com/oyo/metadata/TPropertyLevelResponse$1.class
 com/oyo/calendar/TScheduleEventResponse.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$AsyncClient$getImmediateChildren_call.class
 com/oyo/workforce/TConfigDeactivated$TConfigDeactivatedStandardScheme.class
 com/oyo/metadata/TMetaDataService$listCancellationPolicies_args$_Fields.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$Processor$getAccountFromCrsCode.class
@@ -4392,11 +4597,13 @@ com/oyo/metadata/TMetaDataService$AsyncClient$Factory.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$financeApprovalGranted_result$financeApprovalGranted_resultTupleScheme.class
 com/oyo/metadata/TSpecificationGETResponse$_Fields.class
 com/oyo/mm/channel/accountmanagement/TBillingAddressCreationException$1.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$registerHierarchy_args$registerHierarchy_argsStandardScheme.class
 com/oyo/workforce/TWorkLoad.class
 com/oyo/metadata/TDropPointResponse$TDropPointResponseStandardScheme.class
 com/oyo/workforce/TWorkForceService$isEmployeeAvailableNow_args$isEmployeeAvailableNow_argsStandardScheme.class
 com/oyo/metadata/TMetaDataService$updatePackageDestination_result.class
 com/oyo/metadata/TMetaDataService$batchGetAmenities_result$batchGetAmenities_resultTupleSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getImmediateChildren_result$_Fields.class
 com/oyo/metadata/TMetaDataService$AsyncProcessor$listCatalogSections$1.class
 com/oyo/mm/channel/accountmanagement/AccountManagement$AutoCompleteName_args$AutoCompleteName_argsTupleScheme.class
 com/oyo/workforce/TWorkForceConfigService$getAgents_result$getAgents_resultTupleScheme.class
@@ -4412,4 +4619,6 @@ com/oyo/metadata/TMetaDataService$createPackageDestination_result$createPackageD
 com/oyo/mm/channel/accountmanagement/TBillingAddressResponse$TBillingAddressResponseTupleScheme.class
 com/oyo/metadata/TMetaDataService$getPropertyLevel_result$getPropertyLevel_resultStandardSchemeFactory.class
 com/oyo/metadata/TMetaDataService$batchGetFoodCategories_args$batchGetFoodCategories_argsStandardSchemeFactory.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getHierarchy_result.class
+com/oyo/platform/hierarchy/HierarchyServiceInterface$getSiblings_result$getSiblings_resultTupleScheme.class
 com/oyo/metadata/TMetaDataService$createPropertyLevel_args$createPropertyLevel_argsStandardSchemeFactory.class
